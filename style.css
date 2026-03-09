@@ -1,0 +1,51 @@
+body{
+background:#03070d;
+color:#b8ccd8;
+font-family:Rajdhani,sans-serif;
+margin:0;
+}
+
+.header{
+display:flex;
+align-items:center;
+gap:10px;
+padding:15px;
+border-bottom:1px solid #0d1f30;
+}
+
+.search{
+display:flex;
+gap:10px;
+padding:20px;
+}
+
+input{
+background:#060c14;
+border:1px solid #0d1f30;
+color:#00e5ff;
+padding:10px;
+border-radius:6px;
+}
+
+button{
+background:#00e5ff22;
+border:1px solid #00e5ff;
+color:#00e5ff;
+padding:10px 16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.price-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:10px;
+padding:20px;
+}
+
+.card{
+background:#060c14;
+border:1px solid #0d1f30;
+padding:15px;
+border-radius:8px;
+}

@@ -1654,14 +1654,33 @@ self.onmessage=function(e){
   let _workerFailed = false;
   let _bestWorker = null;
 
-  async function workerFetch(url) {
+async function smartFetch(url) {
+  const mirrors = [
+    url.replace('api.binance.com', 'api.binance.com'),
+    url.replace('api.binance.com', 'api1.binance.com'),
+    url.replace('api.binance.com', 'api3.binance.com')
+  ];
 
-    if(_bestWorker) {
-      try {
-        const res = await fetch(`${_bestWorker}/proxy?url=${encodeURIComponent(url)}`, { signal: AbortSignal.timeout(5000) });
-        if(res.ok) return JSON.parse(await res.text());
-      } catch(e) { _bestWorker = null; }
-    }
+  try {
+    // We use a 5-second timeout so the user isn't waiting forever
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000);
+
+    const data = await Promise.any(mirrors.map(u => 
+      fetch(u, { signal: controller.signal }).then(res => {
+        if (!res.ok) throw new Error('Mirror down');
+        return res.json();
+      })
+    ));
+    
+    clearTimeout(timeout);
+    return data;
+  } catch (e) {
+    console.error("EXCHANGE CONNECTION ERROR:", e);
+    alert("Connection to Binance failed. Check if your internet or a VPN is blocking the API.");
+    return null;
+  }
+}
 
     return new Promise((resolve, reject) => {
       let settled = false, failures = 0;

@@ -1760,23 +1760,12 @@ self.onmessage=function(e){
       });
     });
   }
-
-  async function smartFetch(url) {
-    if(WORKER_URL && !_workerFailed) {
-      try {
-        const data = await workerFetch(url);
-
-        PROXIES.forEach(p => { const el=document.getElementById('px-'+p.id); if(el) el.className='pill'; });
-        const firstPill = document.getElementById('px-allorigins');
-        if(firstPill) { firstPill.className='pill ok'; firstPill.innerHTML='<div class="pill-dot"></div>⚡ Worker'; }
-        return data;
-      } catch(e) {
-        console.warn('Worker failed:', e.message, '— falling back to CORS proxies');
-        _workerFailed = true;
-      }
-    }
-    return corsRaceFetch(url);
-  }
+async function smartFetch(url) {
+  const mirrors = [url, url.replace('api.binance.com', 'api1.binance.com'), url.replace('api.binance.com', 'api3.binance.com')];
+  try {
+    return await Promise.any(mirrors.map(u => fetch(u).then(r => r.ok ? r.json() : Promise.reject())));
+  } catch (e) { return null; }
+}
 
   function calcEMA(a, p) {
     if(a.length < p) return null;

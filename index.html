@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -961,9 +960,6 @@
           <div class="ind-row"><span class="ind-name">MFI (14)</span><div class="ind-bar-wrap"><div class="ind-bar" id="mfiBar" style="width:2%;background:var(--warn)"></div></div><span class="ind-val" id="mfiVal">—</span><span class="badge badge-neut" id="mfiBadge">—</span></div>
           <div class="ind-row"><span class="ind-name">ROC (12)</span><div class="ind-bar-wrap"><div class="ind-bar" id="rocBar" style="width:50%;background:var(--warn)"></div></div><span class="ind-val" id="rocVal">—</span><span class="badge badge-neut" id="rocBadge">—</span></div>
           <div class="ind-row"><span class="ind-name">Ultimate Osc</span><div class="ind-bar-wrap"><div class="ind-bar" id="ultBar" style="width:2%;background:var(--warn)"></div></div><span class="ind-val" id="ultVal">—</span><span class="badge badge-neut" id="ultBadge">—</span></div>
-          <div class="ind-row"><span class="ind-name">Parabolic SAR</span><div class="ind-bar-wrap"><div class="ind-bar" id="psarBar" style="width:2%;background:var(--warn)"></div></div><span class="ind-val" id="psarVal">—</span><span class="badge badge-neut" id="psarBadge">—</span></div>
-          <div class="ind-row"><span class="ind-name">CMF (20)</span><div class="ind-bar-wrap"><div class="ind-bar" id="cmfBar" style="width:50%;background:var(--warn)"></div></div><span class="ind-val" id="cmfVal">—</span><span class="badge badge-neut" id="cmfBadge">—</span></div>
-          <div class="ind-row"><span class="ind-name">Keltner %</span><div class="ind-bar-wrap"><div class="ind-bar" id="keltBar" style="width:50%;background:var(--warn)"></div></div><span class="ind-val" id="keltVal">—</span><span class="badge badge-neut" id="keltBadge">—</span></div>
         </div>
         <!-- TREND / EMA TAB -->
         <div class="ind-group" id="tab-trend">
@@ -1199,28 +1195,16 @@
   </div>
   <!-- ── Candle Pattern Detection ── -->
   <div class="panel" style="margin-top:14px">
-    <div class="ptitle">🕯️ Pattern Detection</div>
-    <div style="font-size:.52rem;color:var(--muted);font-family:'Share Tech Mono',monospace;letter-spacing:1px;margin-bottom:8px">CANDLESTICK PATTERNS</div>
+    <div class="ptitle">🕯️ Candle Pattern Detection</div>
     <div class="pattern-grid" id="patternGrid">
       <div class="pattern-card"><div class="pattern-name">Last 3 Candles</div><div class="pattern-sig" id="pat-main">—</div><div class="pattern-desc" id="pat-main-desc">Fetch data</div></div>
       <div class="pattern-card"><div class="pattern-name">Doji / Indecision</div><div class="pattern-sig" id="pat-doji">—</div><div class="pattern-desc" id="pat-doji-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Hammer / Star</div><div class="pattern-sig" id="pat-hammer">—</div><div class="pattern-desc" id="pat-hammer-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Engulfing</div><div class="pattern-sig" id="pat-engulf">—</div><div class="pattern-desc" id="pat-engulf-desc">—</div></div>
+      <div class="pattern-card"><div class="pattern-name">Hammer / Shooting Star</div><div class="pattern-sig" id="pat-hammer">—</div><div class="pattern-desc" id="pat-hammer-desc">—</div></div>
+      <div class="pattern-card"><div class="pattern-name">Engulfing Pattern</div><div class="pattern-sig" id="pat-engulf">—</div><div class="pattern-desc" id="pat-engulf-desc">—</div></div>
       <div class="pattern-card"><div class="pattern-name">Morning / Evening Star</div><div class="pattern-sig" id="pat-star">—</div><div class="pattern-desc" id="pat-star-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Three Soldiers / Crows</div><div class="pattern-sig" id="pat-three">—</div><div class="pattern-desc" id="pat-three-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Harami</div><div class="pattern-sig" id="pat-harami">—</div><div class="pattern-desc" id="pat-harami-desc">—</div></div>
+      <div class="pattern-card"><div class="pattern-name">Three White / Black</div><div class="pattern-sig" id="pat-three">—</div><div class="pattern-desc" id="pat-three-desc">—</div></div>
+      <div class="pattern-card"><div class="pattern-name">Harami Pattern</div><div class="pattern-sig" id="pat-harami">—</div><div class="pattern-desc" id="pat-harami-desc">—</div></div>
       <div class="pattern-card"><div class="pattern-name">Overall Signal</div><div class="pattern-sig" id="pat-overall">—</div><div class="pattern-desc" id="pat-overall-desc">—</div></div>
-    </div>
-    <div style="font-size:.52rem;color:var(--muted);font-family:'Share Tech Mono',monospace;letter-spacing:1px;margin:14px 0 8px">ADVANCED CHART PATTERNS</div>
-    <div class="pattern-grid" id="advPatternGrid">
-      <div class="pattern-card"><div class="pattern-name">Bull / Bear Flag</div><div class="pattern-sig" id="pat-flag">—</div><div class="pattern-desc" id="pat-flag-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Pennant</div><div class="pattern-sig" id="pat-pennant">—</div><div class="pattern-desc" id="pat-pennant-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Rising / Falling Wedge</div><div class="pattern-sig" id="pat-wedge">—</div><div class="pattern-desc" id="pat-wedge-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Double Top / Bottom</div><div class="pattern-sig" id="pat-double">—</div><div class="pattern-desc" id="pat-double-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Head & Shoulders</div><div class="pattern-sig" id="pat-hs">—</div><div class="pattern-desc" id="pat-hs-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Triangle</div><div class="pattern-sig" id="pat-triangle">—</div><div class="pattern-desc" id="pat-triangle-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Cup & Handle</div><div class="pattern-sig" id="pat-cup">—</div><div class="pattern-desc" id="pat-cup-desc">—</div></div>
-      <div class="pattern-card"><div class="pattern-name">Adv. Overall</div><div class="pattern-sig" id="pat-adv-overall">—</div><div class="pattern-desc" id="pat-adv-overall-desc">—</div></div>
     </div>
   </div>
 
@@ -1422,101 +1406,36 @@ function calcEMA(a,p){if(a.length<p)return null;const k=2/(p+1);let e=a[0];for(l
 function calcRSI(a,p=14){if(a.length<p+1)return null;let g=0,l=0;for(let i=1;i<=p;i++){const d=a[i]-a[i-1];if(d>0)g+=d;else l-=d;}let ag=g/p,al=l/p;for(let i=p+1;i<a.length;i++){const d=a[i]-a[i-1];ag=(ag*(p-1)+Math.max(d,0))/p;al=(al*(p-1)+Math.max(-d,0))/p;}return al===0?100:100-100/(1+ag/al);}
 function calcMACD(a){const e12=calcEMA(a,12),e26=calcEMA(a,26);return(e12&&e26)?e12-e26:null;}
 function calcBB(a,p=20){if(a.length<p)return null;const s=a.slice(-p),m=s.reduce((x,y)=>x+y,0)/p;const std=Math.sqrt(s.reduce((x,y)=>x+(y-m)**2,0)/p);const up=m+2*std,lo=m-2*std,pr=a[a.length-1];return(up-lo)>0?(pr-lo)/(up-lo):0.5;}
-function calcStochRSI(a,p=14){if(a.length<p*2+1)return null;let gains=0,losses=0;for(let i=a.length-p*2;i<a.length-p;i++){const d=a[i+1]-a[i];if(d>0)gains+=d;else losses-=d;}gains/=p;losses/=p;const rsiSeries=[];for(let i=a.length-p;i<a.length;i++){const d=a[i]-a[i-1];gains=(gains*(p-1)+(d>0?d:0))/p;losses=(losses*(p-1)+(d<0?-d:0))/p;const rs=losses===0?100:gains/losses;rsiSeries.push(100-(100/(1+rs)));}let mn=rsiSeries[0],mx=rsiSeries[0];for(let i=1;i<rsiSeries.length;i++){if(rsiSeries[i]<mn)mn=rsiSeries[i];if(rsiSeries[i]>mx)mx=rsiSeries[i];}const last=rsiSeries[rsiSeries.length-1];return mx===mn?50:((last-mn)/(mx-mn))*100;}
+function calcStochRSI(a,p=14){if(a.length<p*2)return null;const rs=[];for(let i=p;i<a.length;i++)rs.push(calcRSI(a.slice(0,i+1),p));const v=rs.filter(x=>x!==null);if(v.length<p)return null;const sl=v.slice(-p),mn=Math.min(...sl),mx=Math.max(...sl);return mx===mn?50:((v[v.length-1]-mn)/(mx-mn))*100;}
 function calcCCI(h,l,c,p=20){if(c.length<p)return null;const hs=h.slice(-p),ls=l.slice(-p),cs=c.slice(-p);const tp=cs.map((v,i)=>(hs[i]+ls[i]+v)/3);const mean=tp.reduce((a,b)=>a+b,0)/p;const md=tp.reduce((a,b)=>a+Math.abs(b-mean),0)/p;return md===0?0:(tp[tp.length-1]-mean)/(0.015*md);}
 function calcMFI(h,l,c,v,p=14){if(c.length<p+1||!v||v.length<p+1)return null;let pF=0,nF=0;for(let i=c.length-p;i<c.length;i++){const tp=(h[i]+l[i]+c[i])/3,ptp=(h[i-1]+l[i-1]+c[i-1])/3,mf=tp*v[i];if(tp>ptp)pF+=mf;else nF+=mf;}return nF===0?100:100-(100/(1+pF/nF));}
 function calcROC(c,p=12){if(c.length<p+1)return null;const prev=c[c.length-1-p],curr=c[c.length-1];return prev===0?0:((curr-prev)/prev)*100;}
 function calcUltimateOscillator(h,l,c){if(c.length<29)return null;const bp=i=>c[i]-Math.min(l[i],c[i-1]);const tr=i=>Math.max(h[i],c[i-1])-Math.min(l[i],c[i-1]);const avg=(p,e)=>{let bS=0,tS=0;for(let i=e-p+1;i<=e;i++){bS+=bp(i);tS+=tr(i);}return tS===0?0:bS/tS;};const n=c.length-1;if(n<28)return null;return 100*(4*avg(7,n)+2*avg(14,n)+avg(28,n))/7;}
-function calcParabolicSAR(h,l,c,step=0.02,max=0.2){if(c.length<3)return null;let bull=c[1]>c[0],af=step,ep=bull?h[0]:l[0],sar=bull?l[0]:h[0];for(let i=2;i<c.length;i++){sar=sar+af*(ep-sar);if(bull){sar=Math.min(sar,l[i-1],i>1?l[i-2]:l[i-1]);if(l[i]<sar){bull=false;sar=ep;ep=l[i];af=step;}else{if(h[i]>ep){ep=h[i];af=Math.min(af+step,max);}}}else{sar=Math.max(sar,h[i-1],i>1?h[i-2]:h[i-1]);if(h[i]>sar){bull=true;sar=ep;ep=h[i];af=step;}else{if(l[i]<ep){ep=l[i];af=Math.min(af+step,max);}}}}return{value:sar,bull};}
-function calcCMF(h,l,c,v,p=20){if(c.length<p||!v||v.length<p)return null;let mfv=0,vol=0;for(let i=c.length-p;i<c.length;i++){const hl=h[i]-l[i];if(hl===0)continue;mfv+=((c[i]-l[i])-(h[i]-c[i]))/hl*v[i];vol+=v[i];}return vol===0?0:mfv/vol;}
-function calcKeltner(h,l,c,p=20,mult=1.5){if(c.length<p+1)return null;const ema=calcEMA(c,p);if(!ema)return null;const atr=calcATR(h,l,c,p);if(!atr)return null;const upper=ema+mult*atr,lower=ema-mult*atr,price=c[c.length-1],range=upper-lower;if(range===0)return null;return{upper,lower,mid:ema,pct:(price-lower)/range*100,price};}
-// Fast single-pass EMA — reuses k factor, no array copies
-function calcEMAFast(c,p){if(!c||c.length<p)return null;let s=0;for(let i=c.length-p;i<c.length;i++)s+=c[i];let v=s/p;const k=2/(p+1);for(let i=c.length-p+1;i<c.length;i++)v=c[i]*k+v*(1-k);return v;}
-// WilliamsR without array copy
-function calcWilliamsR(h,l,c,p=14){if(c.length<p)return null;let hh=h[c.length-p],ll=l[c.length-p];for(let i=c.length-p+1;i<c.length;i++){if(h[i]>hh)hh=h[i];if(l[i]<ll)ll=l[i];}const cp=c[c.length-1];return hh===ll?-50:((hh-cp)/(hh-ll))*-100;}
+function calcWilliamsR(h,l,c,p=14){if(c.length<p)return null;const hh=Math.max(...h.slice(-p)),ll=Math.min(...l.slice(-p)),cp=c[c.length-1];return hh===ll?-50:((hh-cp)/(hh-ll))*-100;}
 function calcATR(h,l,c,p=14){if(c.length<p+1)return null;const trs=[];for(let i=1;i<c.length;i++){trs.push(Math.max(h[i]-l[i],Math.abs(h[i]-c[i-1]),Math.abs(l[i]-c[i-1])));}let atr=trs.slice(0,p).reduce((a,b)=>a+b,0)/p;for(let i=p;i<trs.length;i++)atr=(atr*(p-1)+trs[i])/p;return atr;}
 function calcADX(h,l,c,p=14){if(c.length<p*2)return null;const dmP=[],dmM=[],trs=[];for(let i=1;i<c.length;i++){const up=h[i]-h[i-1],dn=l[i-1]-l[i];dmP.push(up>dn&&up>0?up:0);dmM.push(dn>up&&dn>0?dn:0);trs.push(Math.max(h[i]-l[i],Math.abs(h[i]-c[i-1]),Math.abs(l[i]-c[i-1])));}let atr=trs.slice(0,p).reduce((a,b)=>a+b,0)/p,sdmP=dmP.slice(0,p).reduce((a,b)=>a+b,0)/p,sdmM=dmM.slice(0,p).reduce((a,b)=>a+b,0)/p;for(let i=p;i<trs.length;i++){atr=(atr*(p-1)+trs[i])/p;sdmP=(sdmP*(p-1)+dmP[i])/p;sdmM=(sdmM*(p-1)+dmM[i])/p;}if(atr===0)return null;const diP=(sdmP/atr)*100,diM=(sdmM/atr)*100;return{adx:Math.abs(diP-diM)/(diP+diM)*100,diPlus:diP,diMinus:diM};}
 function calcOBV(c,v){if(c.length<2)return null;let obv=0;const arr=[0];for(let i=1;i<c.length;i++){if(c[i]>c[i-1])obv+=v[i];else if(c[i]<c[i-1])obv-=v[i];arr.push(obv);}const r=arr.slice(-20);const ef=calcEMA(r,5),es=calcEMA(r,10);return{value:obv,rising:ef!==null&&es!==null?ef>es:obv>arr[arr.length-10]};}
 function calcSuperTrend(h,l,c,period=10,mult=3){if(c.length<period+1)return null;const atr=calcATR(h,l,c,period);if(!atr)return null;const hl2=(h[h.length-1]+l[l.length-1])/2,lb=hl2-mult*atr,price=c[c.length-1];const trend=price>lb?'up':'down';return{trend,value:trend==='up'?lb:hl2+mult*atr,atr};}
 function calcPivots(h,l,c){if(c.length<2)return null;const ph=h[h.length-2],pl=l[l.length-2],pc=c[c.length-2],pp=(ph+pl+pc)/3;return{pp,r1:2*pp-pl,r2:pp+(ph-pl),s1:2*pp-ph,s2:pp-(ph-pl)};}
-// Divergence: compare RSI/MACD at two points only — no repeated full recalculations
-function calcDivergence(c,period=14){
-  const n=c.length; if(n<period+10)return{rsi:'none',macd:'none'};
-  // Compare current vs 5 candles ago — single calc each
-  const rsiNow=calcRSI(c,period);
-  const rsiPrev=calcRSI(c.slice(0,-5),period);
-  const macdNow=calcMACD(c);
-  const macdPrev=calcMACD(c.slice(0,-5));
-  const pNow=c[n-1],pPrev=c[n-6];
-  let rsiDiv='none',macdDiv='none';
-  if(rsiNow!==null&&rsiPrev!==null){
-    if(pNow>pPrev*1.002&&rsiNow<rsiPrev-2)rsiDiv='bearish';
-    else if(pNow<pPrev*0.998&&rsiNow>rsiPrev+2)rsiDiv='bullish';
-  }
-  if(macdNow!==null&&macdPrev!==null){
-    if(pNow>pPrev*1.002&&macdNow<macdPrev-0.001)macdDiv='bearish';
-    else if(pNow<pPrev*0.998&&macdNow>macdPrev+0.001)macdDiv='bullish';
-  }
-  return{rsi:rsiDiv,macd:macdDiv};
-}
+function calcDivergence(c,period=14,lookback=5){if(c.length<period+lookback*2)return{rsi:'none',macd:'none'};const rsiArr=[];for(let i=lookback;i>=0;i--){const r=calcRSI(c.slice(0,c.length-i),period);if(r!==null)rsiArr.push(r);}const priceArr=c.slice(-rsiArr.length);if(rsiArr.length<3)return{rsi:'none',macd:'none'};const pF=priceArr[0],pL=priceArr[priceArr.length-1],rF=rsiArr[0],rL=rsiArr[rsiArr.length-1];let rsiDiv='none';if(pL>pF*1.002&&rL<rF-2)rsiDiv='bearish';if(pL<pF*0.998&&rL>rF+2)rsiDiv='bullish';const macdArr=[];for(let i=lookback;i>=0;i--){const m=calcMACD(c.slice(0,c.length-i));if(m!==null)macdArr.push(m);}const mF=macdArr[0],mL=macdArr[macdArr.length-1];let macdDiv='none';if(pL>pF*1.002&&mL<mF-0.001)macdDiv='bearish';if(pL<pF*0.998&&mL>mF+0.001)macdDiv='bullish';return{rsi:rsiDiv,macd:macdDiv};}
 function calcVWAP(c,h,l,v){if(c.length<2)return null;let cumTPV=0,cumVol=0;for(let i=0;i<c.length;i++){cumTPV+=(h[i]+l[i]+c[i])/3*v[i];cumVol+=v[i];}return cumVol>0?cumTPV/cumVol:null;}
-function calcMVWAP(c,h,l,v,p=20){
-  if(c.length<p)return null;
-  const s=c.length-p;
-  let cumTPV=0,cumVol=0;
-  for(let i=s;i<c.length;i++){cumTPV+=(h[i]+l[i]+c[i])/3*v[i];cumVol+=v[i];}
-  return cumVol>0?cumTPV/cumVol:null;
-}
-// Ichimoku: replace Math.max(...slice) spreads with fast loops
-function calcIchimoku(h,l,c){
-  if(c.length<52)return null;
-  const n=c.length;
-  const midRange=(arr,from,len)=>{let hi=arr[from],lo=arr[from];for(let i=from+1;i<from+len;i++){if(arr[i]>hi)hi=arr[i];if(arr[i]<lo)lo=arr[i];}return(hi+lo)/2;};
-  const tenkan=(midRange(h,n-9,9)+midRange(l,n-9,9))/2;
-  const kijun=(midRange(h,n-26,26)+midRange(l,n-26,26))/2;
-  const senkouA=(tenkan+kijun)/2;
-  const senkouB=(midRange(h,n-52,52)+midRange(l,n-52,52))/2;
-  return{tenkan,kijun,senkouA,senkouB,chikou:c[n-1],chikouRef:c[n-26]||c[0],price:c[n-1]};
-}
+function calcMVWAP(c,h,l,v,p=20){if(c.length<p)return null;return calcVWAP(c.slice(-p),h.slice(-p),l.slice(-p),v.slice(-p));}
+function calcIchimoku(h,l,c){if(c.length<52)return null;const mid=(arr,s,len)=>{const sl=arr.slice(s,s+len);return(Math.max(...sl)+Math.min(...sl))/2;};const n=c.length,tenkan=(mid(h,n-9,9)+mid(l,n-9,9))/2,kijun=(mid(h,n-26,26)+mid(l,n-26,26))/2,senkouA=(tenkan+kijun)/2,senkouB=(mid(h,n-52,52)+mid(l,n-52,52))/2;return{tenkan,kijun,senkouA,senkouB,chikou:c[n-1],chikouRef:c[n-26]||c[0],price:c[n-1]};}
 function calcEMASeries(c,p){if(!c||c.length<p)return[];const r=new Array(c.length).fill(null);let s=0;for(let i=0;i<p;i++)s+=c[i];r[p-1]=s/p;const k=2/(p+1);for(let i=p;i<c.length;i++)r[i]=c[i]*k+r[i-1]*(1-k);return r;}
 
 // ─── COMPUTE ALL INDICATORS ──────────────────────────────────
 function computeIndicators(closes,highs,lows,volumes,price,cfg){
-  // Single shared EMA pass — calcEMA loops full array each call so batch by period order
-  const ema8=calcEMA(closes,8),ema13=calcEMA(closes,13),ema20=calcEMA(closes,20);
-  const ema21=calcEMA(closes,21),ema50=calcEMA(closes,50),ema55=calcEMA(closes,55),ema200=calcEMA(closes,200);
-  // Momentum
-  const rsi=calcRSI(closes),macdV=calcMACD(closes);
-  const bbP=calcBB(closes),stoch=calcStochRSI(closes);
-  const willR=calcWilliamsR(highs,lows,closes); // fast version — no array copy
-  // Volatility / trend
-  const atr=calcATR(highs,lows,closes);
-  const adxData=calcADX(highs,lows,closes);
-  const st=calcSuperTrend(highs,lows,closes,cfg.stPeriod||10,cfg.stMult||3);
-  const piv=calcPivots(highs,lows,closes);
-  // Volume
-  const obvData=calcOBV(closes,volumes);
-  const vwap=calcVWAP(closes,highs,lows,volumes);
-  const mvwap=calcMVWAP(closes,highs,lows,volumes); // fast version — no slice copies
-  const avgV=volumes.length>=20?volumes.slice(-20).reduce((a,b)=>a+b,0)/20:volumes.reduce((a,b)=>a+b,0)/volumes.length;
-  const volR=avgV>0?(volumes[volumes.length-1]/avgV)*100:100;
-  const mfi=calcMFI(highs,lows,closes,volumes);
-  const cmf=calcCMF(highs,lows,closes,volumes);
-  // Advanced oscillators
-  const cci=calcCCI(highs,lows,closes);
-  const roc=calcROC(closes);
-  const ult=calcUltimateOscillator(highs,lows,closes);
-  const psar=calcParabolicSAR(highs,lows,closes);
-  const kelt=calcKeltner(highs,lows,closes);
-  // Complex (intentionally last — most expensive)
-  const ichi=calcIchimoku(highs,lows,closes); // fast version — no spread
-  const div=calcDivergence(closes); // fast version — only 2 calcs instead of 12
-  return{rsi,macdV,ema8,ema13,ema20,ema21,ema50,ema55,ema200,bbP,stoch,willR,atr,adxData,obvData,ichi,st,piv,div,vwap,mvwap,cci,mfi,roc,ult,volR,psar,cmf,kelt};
+  const rsi=calcRSI(closes),macdV=calcMACD(closes),ema8=calcEMA(closes,8),ema13=calcEMA(closes,13),ema20=calcEMA(closes,20),ema21=calcEMA(closes,21),ema50=calcEMA(closes,50),ema55=calcEMA(closes,55),ema200=calcEMA(closes,200);
+  const bbP=calcBB(closes),stoch=calcStochRSI(closes),willR=calcWilliamsR(highs,lows,closes),atr=calcATR(highs,lows,closes),adxData=calcADX(highs,lows,closes),obvData=calcOBV(closes,volumes);
+  const ichi=calcIchimoku(highs,lows,closes),st=calcSuperTrend(highs,lows,closes,cfg.stPeriod||10,cfg.stMult||3),piv=calcPivots(highs,lows,closes),div=calcDivergence(closes);
+  const vwap=calcVWAP(closes,highs,lows,volumes),mvwap=calcMVWAP(closes,highs,lows,volumes),cci=calcCCI(highs,lows,closes),mfi=calcMFI(highs,lows,closes,volumes),roc=calcROC(closes),ult=calcUltimateOscillator(highs,lows,closes);
+  const avgV=volumes.slice(-20).reduce((a,b)=>a+b,0)/20,volR=avgV>0?(volumes[volumes.length-1]/avgV)*100:100;
+  return{rsi,macdV,ema8,ema13,ema20,ema21,ema50,ema55,ema200,bbP,stoch,willR,atr,adxData,obvData,ichi,st,piv,div,vwap,mvwap,cci,mfi,roc,ult,volR};
 }
 
 // ─── TRADE SCORE ─────────────────────────────────────────────
 function computeScore(ind,price,isBUY,isSELL,belowCount,aboveCount,mtfScore,rm){
-  const{rsi,macdV,stoch,willR,bbP,div,ema8,ema13,ema21,ema55,ema200,adxData,ichi,st,piv,obvData,volR,cci,mfi,roc,ult,psar,cmf,kelt}=ind;
+  const{rsi,macdV,stoch,willR,bbP,div,ema8,ema13,ema21,ema55,ema200,adxData,ichi,st,piv,obvData,volR,cci,mfi,roc,ult}=ind;
   let momS=0,momMax=0;
   if(rsi!==null){momMax+=20;if(rsi>=45&&rsi<=65)momS+=20;else if(rsi>=35&&rsi<45)momS+=12;else if(rsi<30)momS+=16;else if(rsi>70)momS+=4;else momS+=8;}
   if(macdV!==null){momMax+=20;momS+=macdV>0?20:4;}
@@ -1527,9 +1446,6 @@ function computeScore(ind,price,isBUY,isSELL,belowCount,aboveCount,mtfScore,rm){
   if(mfi!==null){momMax+=10;momS+=mfi<20?10:mfi>80?1:mfi<50?6:8;}
   if(roc!==null){momMax+=8;momS+=roc>2?8:roc>0?5:roc>-2?3:1;}
   if(ult!==null){momMax+=8;momS+=ult<30?8:ult>70?1:ult>=50?5:3;}
-  if(psar){momMax+=10;momS+=psar.bull?10:0;}
-  if(cmf!==null){momMax+=10;momS+=cmf>0.1?10:cmf>0?6:cmf>-0.1?3:0;}
-  if(kelt){momMax+=10;momS+=kelt.pct<20?9:kelt.pct>80?1:kelt.pct<50?7:5;}
   if(div){momMax+=21;momS+=div.rsi==='bullish'?14:div.rsi==='bearish'?0:7;momS+=div.macd==='bullish'?7:div.macd==='bearish'?0:4;}
   momS=momMax>0?Math.round((momS/momMax)*100):0;
   let tS=0,tMax=0;
@@ -1550,7 +1466,7 @@ function computeScore(ind,price,isBUY,isSELL,belowCount,aboveCount,mtfScore,rm){
 
 // ─── PREDICTION ──────────────────────────────────────────────
 function computePrediction(price,closes,highs,lows,ind,isBUY,isSELL){
-  const{rsi,macdV,ema8,ema55,ema200,adxData,ichi,st,stoch,willR,bbP,obvData,div,piv,atr,psar,cmf,kelt}=ind;
+  const{rsi,macdV,ema8,ema55,ema200,adxData,ichi,st,stoch,willR,bbP,obvData,div,piv,atr}=ind;
   let bS=0,beS=0,tW=0;
   function add(b,br,w){tW+=w;if(b)bS+=w;else if(br)beS+=w;else{bS+=w*.5;beS+=w*.5;}}
   add(isBUY,isSELL,25);if(rsi!==null)add(rsi>50&&rsi<70,rsi<50||rsi>75,10);if(macdV!==null)add(macdV>0,macdV<0,10);if(ema55&&ema200)add(price>ema200,price<ema200,10);if(ema8&&ema55)add(price>ema55,price<ema55,8);
@@ -1558,9 +1474,6 @@ function computePrediction(price,closes,highs,lows,ind,isBUY,isSELL){
   if(ichi){const ct=Math.max(ichi.senkouA,ichi.senkouB);add(price>ct&&ichi.tenkan>ichi.kijun,price<ct&&ichi.tenkan<ichi.kijun,8);}
   if(st)add(st.trend==='up',st.trend==='down',8);if(stoch!==null)add(stoch<80&&stoch>20,stoch>80||stoch<20,5);if(willR!==null)add(willR>-50&&willR<-20,willR>-20||willR<-80,4);
   if(obvData)add(obvData.rising,!obvData.rising,6);if(div)add(div.rsi==='bullish'||div.macd==='bullish',div.rsi==='bearish'||div.macd==='bearish',6);if(bbP!==null)add(bbP<0.3,bbP>0.7,4);if(piv)add(price>piv.pp,price<piv.pp,4);
-  if(psar)add(psar.bull,!psar.bull,7);
-  if(cmf!==null)add(cmf>0.05,cmf<-0.05,6);
-  if(kelt)add(kelt.pct<40,kelt.pct>60,5);
   const tot=bS+beS,bP=tot>0?bS/tot:0.5,brP=1-bP;
   let direction,dirColor,dirDetail;
   if(bP>=0.65){direction='📈 BULLISH';dirColor='var(--green)';dirDetail='Most indicators point UP';}
@@ -1573,7 +1486,7 @@ function computePrediction(price,closes,highs,lows,ind,isBUY,isSELL){
   let entry,sl,tp1,tp2,entryDetail,slDetail,tp1Detail,tp2Detail;
   if(isBull){const sup=piv?Math.max(piv.s1,price-atrV*0.8):price-atrV*0.5;entry=price;sl=sup-atrV*0.3;tp1=piv?piv.r1:price+atrV*2;tp2=piv?piv.r2:price+atrV*3.5;entryDetail='Market / dip to support';slDetail=`Below ${piv?'S1':'ATR floor'} · ${(((price-sl)/price)*100).toFixed(1)}% risk`;tp1Detail=`${piv?'Pivot R1':'1.5× ATR'} · +${(((tp1-price)/price)*100).toFixed(1)}%`;tp2Detail=`${piv?'Pivot R2':'2.5× ATR'} · +${(((tp2-price)/price)*100).toFixed(1)}%`;}
   else{entry=piv?piv.r1:price+atrV*0.5;sl=piv?piv.r2:price+atrV*1.5;tp1=piv?piv.s1:price-atrV*2;tp2=piv?piv.s2:price-atrV*3.5;entryDetail='Sell near resistance';slDetail=`Above ${piv?'R2':'ATR roof'} · ${(((sl-price)/price)*100).toFixed(1)}% risk`;tp1Detail=`${piv?'Pivot S1':'1.5× ATR'} · ${(((price-tp1)/price)*100).toFixed(1)}% gain`;tp2Detail=`${piv?'Pivot S2':'2.5× ATR'} · ${(((price-tp2)/price)*100).toFixed(1)}% gain`;}
-  const signals=[{label:'EMA55 Strategy',bull:isBUY,bear:isSELL,w:25},{label:'RSI',bull:rsi!==null&&rsi>50&&rsi<70,bear:rsi!==null&&(rsi<50||rsi>75),w:10},{label:'MACD',bull:macdV!==null&&macdV>0,bear:macdV!==null&&macdV<0,w:10},{label:'EMA200 Trend',bull:ema200!==null&&price>ema200,bear:ema200!==null&&price<ema200,w:10},{label:'SuperTrend',bull:st!==null&&st.trend==='up',bear:st!==null&&st.trend==='down',w:8},{label:'ADX',bull:adxData!==null&&adxData.diPlus>adxData.diMinus,bear:adxData!==null&&adxData.diMinus>adxData.diPlus,w:8},{label:'Ichimoku',bull:ichi!==null&&price>Math.max(ichi.senkouA,ichi.senkouB),bear:ichi!==null&&price<Math.min(ichi.senkouA,ichi.senkouB),w:8},{label:'Parabolic SAR',bull:psar!==null&&psar.bull,bear:psar!==null&&!psar.bull,w:7},{label:'OBV',bull:obvData!==null&&obvData.rising,bear:obvData!==null&&!obvData.rising,w:6},{label:'CMF',bull:cmf!==null&&cmf>0.05,bear:cmf!==null&&cmf<-0.05,w:6},{label:'Divergence',bull:div&&(div.rsi==='bullish'||div.macd==='bullish'),bear:div&&(div.rsi==='bearish'||div.macd==='bearish'),w:6},{label:'Keltner',bull:kelt!==null&&kelt.pct<40,bear:kelt!==null&&kelt.pct>60,w:5},{label:'Bollinger',bull:bbP!==null&&bbP<0.3,bear:bbP!==null&&bbP>0.7,w:4},{label:'Pivot Points',bull:piv!==null&&price>piv.pp,bear:piv!==null&&price<piv.pp,w:4}];
+  const signals=[{label:'EMA55 Strategy',bull:isBUY,bear:isSELL,w:25},{label:'RSI',bull:rsi!==null&&rsi>50&&rsi<70,bear:rsi!==null&&(rsi<50||rsi>75),w:10},{label:'MACD',bull:macdV!==null&&macdV>0,bear:macdV!==null&&macdV<0,w:10},{label:'EMA200 Trend',bull:ema200!==null&&price>ema200,bear:ema200!==null&&price<ema200,w:10},{label:'SuperTrend',bull:st!==null&&st.trend==='up',bear:st!==null&&st.trend==='down',w:8},{label:'ADX',bull:adxData!==null&&adxData.diPlus>adxData.diMinus,bear:adxData!==null&&adxData.diMinus>adxData.diPlus,w:8},{label:'Ichimoku',bull:ichi!==null&&price>Math.max(ichi.senkouA,ichi.senkouB),bear:ichi!==null&&price<Math.min(ichi.senkouA,ichi.senkouB),w:8},{label:'OBV',bull:obvData!==null&&obvData.rising,bear:obvData!==null&&!obvData.rising,w:6},{label:'Divergence',bull:div&&(div.rsi==='bullish'||div.macd==='bullish'),bear:div&&(div.rsi==='bearish'||div.macd==='bearish'),w:6},{label:'Pivot Points',bull:piv!==null&&price>piv.pp,bear:piv!==null&&price<piv.pp,w:4}];
   return{direction,dirColor,dirDetail,confidence:conf,confLabel:conf>=75?'HIGH 🔥':conf>=60?'MODERATE':'LOW ⚠️',confColor:conf>=75?'var(--green)':conf>=60?'var(--warn)':'var(--red)',rangeHigh,rangeLow,entry,sl,tp1,tp2,entryDetail,slDetail,tp1Detail,tp2Detail,isBull,signals};
 }
 
@@ -1635,148 +1548,6 @@ function computeCandlePatterns(opens,highs,lows,closes){
   return{doji:[dojiSig,dojiDesc],hammer:[hamSig,hamDesc],engulf:[engSig,engDesc],star:[starSig,starDesc],three:[threeSig,threeDesc],harami:[harSig,harDesc],main:[mainSig,mainDesc],overall:[ovSig,ovDesc]};
 }
 
-// ─── ADVANCED CHART PATTERNS ──────────────────────────────────
-function computeAdvancedPatterns(opens,highs,lows,closes){
-  const n=closes.length; if(n<30) return null;
-  const atr=()=>{let s=0;for(let i=n-14;i<n;i++)s+=highs[i]-lows[i];return s/14;};
-  const at=atr();
-  // Linear regression slope over window
-  const slope=(arr,start,end)=>{const ln=end-start;let sx=0,sy=0,sxy=0,sx2=0;for(let i=start;i<end;i++){const x=i-start;sx+=x;sy+=arr[i];sxy+=x*arr[i];sx2+=x*x;}const d=ln*sx2-sx*sx;return d===0?0:(ln*sxy-sx*sy)/d;};
-  // Local extrema finder
-  const peaks=(arr,w=3)=>{const p=[];for(let i=w;i<arr.length-w;i++){let ok=true;for(let j=1;j<=w;j++){if(arr[i]<=arr[i-j]||arr[i]<=arr[i+j]){ok=false;break;}}if(ok)p.push(i);}return p;};
-  const troughs=(arr,w=3)=>{const t=[];for(let i=w;i<arr.length-w;i++){let ok=true;for(let j=1;j<=w;j++){if(arr[i]>=arr[i-j]||arr[i]>=arr[i+j]){ok=false;break;}}if(ok)t.push(i);}return t;};
-
-  // ── FLAG ──────────────────────────────────────────────────────
-  let flagSig='—',flagDesc='No flag pattern';
-  {
-    const pole=20,flag=10,lookback=pole+flag;
-    if(n>=lookback){
-      const poleStart=n-lookback,poleEnd=n-flag;
-      const poleMove=(closes[poleEnd]-closes[poleStart])/closes[poleStart];
-      const flagHighSlope=slope(highs,poleEnd,n);
-      const flagLowSlope=slope(lows,poleEnd,n);
-      if(poleMove>0.05&&flagHighSlope<0&&flagLowSlope<0&&Math.abs(flagHighSlope-flagLowSlope)<at*0.05){
-        flagSig='🟢 BULL FLAG';flagDesc=`Strong pole (+${(poleMove*100).toFixed(1)}%), downward consolidation — breakout target above`;
-      } else if(poleMove<-0.05&&flagHighSlope>0&&flagLowSlope>0&&Math.abs(flagHighSlope-flagLowSlope)<at*0.05){
-        flagSig='🔴 BEAR FLAG';flagDesc=`Strong pole (${(poleMove*100).toFixed(1)}%), upward consolidation — breakdown target below`;
-      }
-    }
-  }
-
-  // ── PENNANT ───────────────────────────────────────────────────
-  let pennantSig='—',pennantDesc='No pennant';
-  {
-    const pole=15,pLen=12,lookback=pole+pLen;
-    if(n>=lookback){
-      const poleStart=n-lookback,poleEnd=n-pLen;
-      const poleMove=(closes[poleEnd]-closes[poleStart])/closes[poleStart];
-      const hSlope=slope(highs,poleEnd,n);
-      const lSlope=slope(lows,poleEnd,n);
-      if(Math.abs(poleMove)>0.04&&hSlope<0&&lSlope>0){
-        if(poleMove>0){pennantSig='🟢 BULL PENNANT';pennantDesc='Converging highs/lows after upward pole — continuation likely';}
-        else{pennantSig='🔴 BEAR PENNANT';pennantDesc='Converging highs/lows after downward pole — continuation likely';}
-      }
-    }
-  }
-
-  // ── WEDGE ─────────────────────────────────────────────────────
-  let wedgeSig='—',wedgeDesc='No wedge';
-  {
-    const w=25;
-    if(n>=w){
-      const hSlope=slope(highs,n-w,n);
-      const lSlope=slope(lows,n-w,n);
-      if(hSlope>0&&lSlope>0&&hSlope<lSlope){wedgeSig='🔴 RISING WEDGE';wedgeDesc='Both highs & lows rising but converging — bearish reversal signal';}
-      else if(hSlope<0&&lSlope<0&&hSlope>lSlope){wedgeSig='🟢 FALLING WEDGE';wedgeDesc='Both highs & lows falling but converging — bullish reversal signal';}
-    }
-  }
-
-  // ── DOUBLE TOP / BOTTOM ───────────────────────────────────────
-  let doubleSig='—',doubleDesc='No double top/bottom';
-  {
-    const win=closes.slice(-40);
-    const wh=highs.slice(-40),wl=lows.slice(-40);
-    const pk=peaks(wh,4),tr=troughs(wl,4);
-    if(pk.length>=2){
-      const [p1,p2]=pk.slice(-2);
-      const diff=Math.abs(wh[p1]-wh[p2])/wh[p1];
-      if(diff<0.02&&p2>p1+5){
-        let neckline=wl[p1];for(let i=p1;i<=p2;i++)if(wl[i]<neckline)neckline=wl[i];
-        doubleSig='🔴 DOUBLE TOP';doubleDesc=`Two peaks ~${(diff*100).toFixed(1)}% apart. Neckline ${fmtShort(neckline)}. Bearish if broken.`;
-      }
-    }
-    if(doubleSig==='—'&&tr.length>=2){
-      const [t1,t2]=tr.slice(-2);
-      const diff=Math.abs(wl[t1]-wl[t2])/wl[t1];
-      if(diff<0.02&&t2>t1+5){
-        doubleSig='🟢 DOUBLE BOTTOM';doubleDesc=`Two troughs ~${(diff*100).toFixed(1)}% apart. Bullish reversal if neckline breaks.`;
-      }
-    }
-  }
-
-  // ── HEAD & SHOULDERS ─────────────────────────────────────────
-  let hsSig='—',hsDesc='No H&S pattern';
-  {
-    const pk=peaks(highs.slice(-50),3);
-    const tr=troughs(lows.slice(-50),3);
-    if(pk.length>=3){
-      const [l,h,r]=pk.slice(-3);
-      const lh=highs.slice(-50)[l],hh=highs.slice(-50)[h],rh=highs.slice(-50)[r];
-      if(hh>lh&&hh>rh&&Math.abs(lh-rh)/hh<0.03){
-        hsSig='🔴 HEAD & SHOULDERS';hsDesc='Classic top reversal — left shoulder, head, right shoulder detected';
-      }
-    }
-    if(hsSig==='—'&&tr.length>=3){
-      const [l,h,r]=tr.slice(-3);
-      const ll=lows.slice(-50)[l],hl=lows.slice(-50)[h],rl=lows.slice(-50)[r];
-      if(hl<ll&&hl<rl&&Math.abs(ll-rl)/Math.abs(hl)<0.03){
-        hsSig='🟢 INV HEAD & SHOULDERS';hsDesc='Inverse H&S — bullish bottom reversal pattern detected';
-      }
-    }
-  }
-
-  // ── TRIANGLE ─────────────────────────────────────────────────
-  let triSig='—',triDesc='No triangle';
-  {
-    const w=30;
-    if(n>=w){
-      const hSlope=slope(highs,n-w,n);
-      const lSlope=slope(lows,n-w,n);
-      const flat=v=>Math.abs(v)<at*0.01;
-      if(hSlope<0&&lSlope>0){triSig='🟡 SYMMETRICAL TRI';triDesc='Converging highs & rising lows — breakout imminent, direction unclear';}
-      else if(flat(hSlope)&&lSlope>0){triSig='🟢 ASCENDING TRI';triDesc='Flat resistance, rising support — typically bullish breakout';}
-      else if(hSlope<0&&flat(lSlope)){triSig='🔴 DESCENDING TRI';triDesc='Falling highs, flat support — typically bearish breakdown';}
-    }
-  }
-
-  // ── CUP & HANDLE ─────────────────────────────────────────────
-  let cupSig='—',cupDesc='No cup & handle';
-  {
-    const w=50;
-    if(n>=w){
-      const seg=closes.slice(-w);
-      const left=seg.slice(0,15),bottom=seg.slice(15,35),right=seg.slice(35,45),handle=seg.slice(45);
-      const lMax=Math.max(...left),bMin=Math.min(...bottom),rMax=Math.max(...right);
-      const depth=(lMax-bMin)/lMax;
-      const symm=Math.abs(lMax-rMax)/lMax;
-      const hDrop=(rMax-Math.min(...handle))/rMax;
-      if(depth>0.1&&depth<0.5&&symm<0.05&&hDrop>0.02&&hDrop<0.15){
-        cupSig='🟢 CUP & HANDLE';cupDesc=`Cup depth ${(depth*100).toFixed(0)}%, handle pullback ${(hDrop*100).toFixed(1)}% — bullish continuation`;
-      }
-    }
-  }
-
-  // ── ADVANCED OVERALL ─────────────────────────────────────────
-  const bullAdv=[flagSig.includes('BULL'),pennantSig.includes('BULL'),wedgeSig.includes('FALLING'),doubleSig.includes('DOUBLE BOT'),hsSig.includes('INV'),triSig.includes('ASCENDING'),cupSig.includes('CUP')].filter(Boolean).length;
-  const bearAdv=[flagSig.includes('BEAR'),pennantSig.includes('BEAR'),wedgeSig.includes('RISING'),doubleSig.includes('DOUBLE TOP'),hsSig.includes('HEAD & SH'),triSig.includes('DESCENDING')].filter(Boolean).length;
-  let advOvSig='⬡ NEUTRAL',advOvDesc='No dominant advanced pattern';
-  if(bullAdv>bearAdv&&bullAdv>0){advOvSig='🟢 BULLISH STRUCTURE';advOvDesc=`${bullAdv} bullish chart pattern${bullAdv>1?'s':''} detected`;}
-  else if(bearAdv>bullAdv&&bearAdv>0){advOvSig='🔴 BEARISH STRUCTURE';advOvDesc=`${bearAdv} bearish chart pattern${bearAdv>1?'s':''} detected`;}
-
-  return{flag:[flagSig,flagDesc],pennant:[pennantSig,pennantDesc],wedge:[wedgeSig,wedgeDesc],double:[doubleSig,doubleDesc],hs:[hsSig,hsDesc],triangle:[triSig,triDesc],cup:[cupSig,cupDesc],advOverall:[advOvSig,advOvDesc]};
-}
-function fmtShort(n){if(!n||isNaN(n))return'—';if(n>=1000)return(n/1000).toFixed(1)+'K';return n.toFixed(2);}
-
 // ─── KEY LEVELS + S&R ────────────────────────────────────────
 function computeKeyLevels(price,highs,lows,closes,atr){
   if(!closes||closes.length<20)return null;
@@ -1793,14 +1564,13 @@ function computeKeyLevels(price,highs,lows,closes,atr){
 }
 
 // ─── BACKTEST ─────────────────────────────────────────────────
-function computeBacktest(closes,highs,lows,e8,e13,e55){
+function computeBacktest(closes,highs,lows){
   if(closes.length<60)return null;
-  // Use passed-in series or compute only if missing
-  const e8s=e8||calcEMASeries(closes,8),e21s=e13||calcEMASeries(closes,21),e55s=e55||calcEMASeries(closes,55);
+  const e8=calcEMASeries(closes,8),e13=calcEMASeries(closes,13),e21=calcEMASeries(closes,21),e55=calcEMASeries(closes,55);
   let trades=[],inTrade=null,wins=0,losses=0,totalPnl=0,maxDD=0,peak=0;
   for(let i=60;i<closes.length-1;i++){
-    if(!e8s[i]||!e21s[i]||!e55s[i])continue;
-    const buyS=e55s[i]<e8s[i]&&e55s[i]<e21s[i],sellS=e55s[i]>e8s[i]&&e55s[i]>e21s[i];
+    if(!e8[i]||!e13[i]||!e21[i]||!e55[i])continue;
+    const buyS=e55[i]<e8[i]&&e55[i]<e13[i]&&e55[i]<e21[i],sellS=e55[i]>e8[i]&&e55[i]>e13[i]&&e55[i]>e21[i];
     if(!inTrade&&buyS)inTrade={type:'LONG',entry:closes[i]};
     if(!inTrade&&sellS)inTrade={type:'SHORT',entry:closes[i]};
     if(inTrade){const ex=inTrade.type==='LONG'?sellS:buyS;if(ex||i===closes.length-2){const p=inTrade.type==='LONG'?(closes[i]-inTrade.entry)/inTrade.entry*100:(inTrade.entry-closes[i])/inTrade.entry*100;totalPnl+=p;if(p>0)wins++;else losses++;peak=Math.max(peak,totalPnl);maxDD=Math.max(maxDD,peak-totalPnl);trades.push({type:inTrade.type,pnlPct:p});inTrade=null;}}
@@ -1812,10 +1582,7 @@ function computeBacktest(closes,highs,lows,e8,e13,e55){
 // ─── VOLUME PROFILE ───────────────────────────────────────────
 function computeVolumeProfile(closes,highs,lows,volumes){
   if(closes.length<20)return null;
-  const BINS=12;
-  let minP=lows[0],maxP=highs[0];
-  for(let i=1;i<lows.length;i++){if(lows[i]<minP)minP=lows[i];if(highs[i]>maxP)maxP=highs[i];}
-  const step=(maxP-minP)/BINS;
+  const BINS=12,minP=Math.min(...lows),maxP=Math.max(...highs),step=(maxP-minP)/BINS;
   const bins=Array(BINS).fill(0),labels=[];
   for(let b=0;b<BINS;b++)labels.push(minP+b*step+step/2);
   closes.forEach((c,i)=>{const bin=Math.min(BINS-1,Math.floor((c-minP)/step));if(bin>=0)bins[bin]+=(volumes[i]||0);});
@@ -1840,16 +1607,14 @@ self.onmessage=function(e){
 
     self.postMessage({type:'WAVE1',id,payload:{ind,score,prediction,patterns,elapsed1:t1-t0}});
 
-    // ── WAVE 2: chart + backtest + volume profile + key levels + advanced patterns ──
-    const e8s=calcEMASeries(closes,8),e21s=calcEMASeries(closes,21),e55s=calcEMASeries(closes,55),e200s=calcEMASeries(closes,200);
-    const chart={e8:e8s,e21:e21s,e55:e55s,e200:e200s};
-    const backtest=computeBacktest(closes,highs,lows,e8s,e21s,e55s);
+    // ── WAVE 2: slow — chart series + backtest + volume profile + key levels + S&R ──
+    const chart={e8:calcEMASeries(closes,8),e21:calcEMASeries(closes,21),e55:calcEMASeries(closes,55),e200:calcEMASeries(closes,200)};
+    const backtest=computeBacktest(closes,highs,lows);
     const volumeProfile=computeVolumeProfile(closes,highs,lows,volumes);
     const keyLevels=computeKeyLevels(price,highs,lows,closes,ind.atr);
-    const advPatterns=opens?computeAdvancedPatterns(opens,highs,lows,closes):null;
     const t2=Date.now();
 
-    self.postMessage({type:'WAVE2',id,payload:{chart,backtest,volumeProfile,keyLevels,advPatterns,elapsed2:t2-t1,totalElapsed:t2-t0}});
+    self.postMessage({type:'WAVE2',id,payload:{chart,backtest,volumeProfile,keyLevels,elapsed2:t2-t1,totalElapsed:t2-t0}});
 
   }catch(err){
     self.postMessage({type:'ERROR',id,error:err.message});
@@ -2056,7 +1821,7 @@ self.onmessage=function(e){
   function calcRSI(a,p=14){if(a.length<p+1)return null;let g=0,l=0;for(let i=1;i<=p;i++){const d=a[i]-a[i-1];if(d>0)g+=d;else l-=d;}let ag=g/p,al=l/p;for(let i=p+1;i<a.length;i++){const d=a[i]-a[i-1];ag=(ag*(p-1)+Math.max(d,0))/p;al=(al*(p-1)+Math.max(-d,0))/p;}return al===0?100:100-100/(1+ag/al);}
   function calcMACD(a){const e12=calcEMA(a,12),e26=calcEMA(a,26);return(e12&&e26)?e12-e26:null;}
   function calcBB(a,p=20){if(a.length<p)return null;const s=a.slice(-p),m=s.reduce((x,y)=>x+y,0)/p;const std=Math.sqrt(s.reduce((x,y)=>x+(y-m)**2,0)/p);const up=m+2*std,lo=m-2*std,pr=a[a.length-1];return(up-lo)>0?(pr-lo)/(up-lo):0.5;}
-  function calcStochRSI(a,p=14){if(a.length<p*2+1)return null;let gains=0,losses=0;for(let i=a.length-p*2;i<a.length-p;i++){const d=a[i+1]-a[i];if(d>0)gains+=d;else losses-=d;}gains/=p;losses/=p;const rsiSeries=[];for(let i=a.length-p;i<a.length;i++){const d=a[i]-a[i-1];gains=(gains*(p-1)+(d>0?d:0))/p;losses=(losses*(p-1)+(d<0?-d:0))/p;const rs=losses===0?100:gains/losses;rsiSeries.push(100-(100/(1+rs)));}let mn=rsiSeries[0],mx=rsiSeries[0];for(let i=1;i<rsiSeries.length;i++){if(rsiSeries[i]<mn)mn=rsiSeries[i];if(rsiSeries[i]>mx)mx=rsiSeries[i];}const last=rsiSeries[rsiSeries.length-1];return mx===mn?50:((last-mn)/(mx-mn))*100;}
+  function calcStochRSI(a,p=14){if(a.length<p*2)return null;const rs=[];for(let i=p;i<a.length;i++)rs.push(calcRSI(a.slice(0,i+1),p));const v=rs.filter(x=>x!==null);if(v.length<p)return null;const sl=v.slice(-p),mn=Math.min(...sl),mx=Math.max(...sl);return mx===mn?50:((v[v.length-1]-mn)/(mx-mn))*100;}
 
   function calcCCI(highs, lows, closes, p=20) {
     if(closes.length < p) return null;
@@ -2100,56 +1865,12 @@ self.onmessage=function(e){
     return 100*(4*a7+2*a14+a28)/7;
   }
 
-  function calcParabolicSAR(highs, lows, closes, step=0.02, max=0.2) {
-    if(closes.length < 3) return null;
-    let bull = closes[1] > closes[0];
-    let af = step, ep = bull ? highs[0] : lows[0], sar = bull ? lows[0] : highs[0];
-    for(let i=2; i<closes.length; i++){
-      sar = sar + af*(ep-sar);
-      if(bull){
-        sar = Math.min(sar, lows[i-1], i>1?lows[i-2]:lows[i-1]);
-        if(lows[i] < sar){ bull=false; sar=ep; ep=lows[i]; af=step; }
-        else { if(highs[i]>ep){ ep=highs[i]; af=Math.min(af+step,max); } }
-      } else {
-        sar = Math.max(sar, highs[i-1], i>1?highs[i-2]:highs[i-1]);
-        if(highs[i] > sar){ bull=true; sar=ep; ep=highs[i]; af=step; }
-        else { if(lows[i]<ep){ ep=lows[i]; af=Math.min(af+step,max); } }
-      }
-    }
-    return { value: sar, bull };
-  }
-
-  function calcCMF(highs, lows, closes, volumes, p=20) {
-    if(closes.length < p || !volumes || volumes.length < p) return null;
-    let mfv=0, vol=0;
-    for(let i=closes.length-p; i<closes.length; i++){
-      const hl = highs[i]-lows[i];
-      if(hl===0) continue;
-      mfv += ((closes[i]-lows[i])-(highs[i]-closes[i]))/hl * volumes[i];
-      vol += volumes[i];
-    }
-    return vol===0 ? 0 : mfv/vol;
-  }
-
-  function calcKeltner(highs, lows, closes, p=20, mult=1.5) {
-    if(closes.length < p+1) return null;
-    const ema = calcEMA(closes, p);
-    if(!ema) return null;
-    const atr = calcATR(highs, lows, closes, p);
-    if(!atr) return null;
-    const upper=ema+mult*atr, lower=ema-mult*atr;
-    const price=closes[closes.length-1], range=upper-lower;
-    if(range===0) return null;
-    return { upper, lower, mid:ema, pct:(price-lower)/range*100, price };
-  }
-
   function calcWilliamsR(highs, lows, closes, p=14) {
     if(closes.length < p) return null;
-    const n=closes.length;
-    let hh=highs[n-p],ll=lows[n-p];
-    for(let i=n-p+1;i<n;i++){if(highs[i]>hh)hh=highs[i];if(lows[i]<ll)ll=lows[i];}
-    const cp=closes[n-1];
-    return hh===ll?-50:((hh-cp)/(hh-ll))*-100;
+    const h = highs.slice(-p), l = lows.slice(-p);
+    const hh = Math.max(...h), ll = Math.min(...l);
+    const cp = closes[closes.length-1];
+    return hh === ll ? -50 : ((hh - cp) / (hh - ll)) * -100;
   }
 
   function calcATR(highs, lows, closes, p=14) {
@@ -2231,21 +1952,37 @@ self.onmessage=function(e){
     return { pp, r1, r2, s1, s2 };
   }
 
-  function calcDivergence(closes, period=14) {
-    const n=closes.length; if(n<period+10) return{rsi:'none',macd:'none'};
-    const rsiNow=calcRSI(closes,period), rsiPrev=calcRSI(closes.slice(0,-5),period);
-    const macdNow=calcMACD(closes), macdPrev=calcMACD(closes.slice(0,-5));
-    const pNow=closes[n-1], pPrev=closes[n-6];
-    let rsiDiv='none',macdDiv='none';
-    if(rsiNow!==null&&rsiPrev!==null){
-      if(pNow>pPrev*1.002&&rsiNow<rsiPrev-2)rsiDiv='bearish';
-      else if(pNow<pPrev*0.998&&rsiNow>rsiPrev+2)rsiDiv='bullish';
+  function calcDivergence(closes, period=14, lookback=5) {
+    if(closes.length < period + lookback*2) return { rsi: 'none', macd: 'none' };
+
+    const rsiArr = [];
+    for(let i=lookback; i>=0; i--) {
+      const slice = closes.slice(0, closes.length - i);
+      const r = calcRSI(slice, period);
+      if(r!==null) rsiArr.push(r);
     }
-    if(macdNow!==null&&macdPrev!==null){
-      if(pNow>pPrev*1.002&&macdNow<macdPrev-0.001)macdDiv='bearish';
-      else if(pNow<pPrev*0.998&&macdNow>macdPrev+0.001)macdDiv='bullish';
+    const priceArr = closes.slice(-rsiArr.length);
+    if(rsiArr.length < 3) return { rsi: 'none', macd: 'none' };
+
+    const pFirst=priceArr[0], pLast=priceArr[priceArr.length-1];
+    const rFirst=rsiArr[0],   rLast=rsiArr[rsiArr.length-1];
+
+    let rsiDiv = 'none';
+    if(pLast > pFirst * 1.002 && rLast < rFirst - 2) rsiDiv = 'bearish';
+    if(pLast < pFirst * 0.998 && rLast > rFirst + 2) rsiDiv = 'bullish';
+
+    const macdArr = [];
+    for(let i=lookback; i>=0; i--) {
+      const slice = closes.slice(0, closes.length - i);
+      const m = calcMACD(slice);
+      if(m!==null) macdArr.push(m);
     }
-    return{rsi:rsiDiv,macd:macdDiv};
+    const mFirst=macdArr[0], mLast=macdArr[macdArr.length-1];
+    let macdDiv = 'none';
+    if(pLast > pFirst * 1.002 && mLast < mFirst - 0.001) macdDiv = 'bearish';
+    if(pLast < pFirst * 0.998 && mLast > mFirst + 0.001) macdDiv = 'bullish';
+
+    return { rsi: rsiDiv, macd: macdDiv };
   }
 
   function calcVWAP(closes, highs, lows, volumes) {
@@ -2262,13 +1999,11 @@ self.onmessage=function(e){
 
   function calcMVWAP(closes, highs, lows, volumes, period=20) {
     if(closes.length < period) return null;
-    const s=closes.length-period;
-    let cumTPV=0,cumVol=0;
-    for(let i=s;i<closes.length;i++){
-      cumTPV+=(highs[i]+lows[i]+closes[i])/3*volumes[i];
-      cumVol+=volumes[i];
-    }
-    return cumVol>0?cumTPV/cumVol:null;
+    const sliceC = closes.slice(-period);
+    const sliceH = highs.slice(-period);
+    const sliceL = lows.slice(-period);
+    const sliceV = volumes.slice(-period);
+    return calcVWAP(sliceC, sliceH, sliceL, sliceV);
   }
 
   function calcMTFScore(closes, highs, lows, volumes) {
@@ -2326,13 +2061,24 @@ self.onmessage=function(e){
 
   function calcIchimoku(highs, lows, closes) {
     if(closes.length < 52) return null;
-    const n=closes.length;
-    const midRange=(arr,from,len)=>{let hi=arr[from],lo=arr[from];for(let i=from+1;i<from+len;i++){if(arr[i]>hi)hi=arr[i];if(arr[i]<lo)lo=arr[i];}return(hi+lo)/2;};
-    const tenkan=(midRange(highs,n-9,9)+midRange(lows,n-9,9))/2;
-    const kijun=(midRange(highs,n-26,26)+midRange(lows,n-26,26))/2;
-    const senkouA=(tenkan+kijun)/2;
-    const senkouB=(midRange(highs,n-52,52)+midRange(lows,n-52,52))/2;
-    return{tenkan,kijun,senkouA,senkouB,chikou:closes[n-1],chikouRef:closes[n-26]||closes[0],price:closes[n-1]};
+    const midpoint = (arr, start, len) => {
+      const sl = arr.slice(start, start+len);
+      return (Math.max(...sl) + Math.min(...sl)) / 2;
+    };
+    const n = closes.length;
+
+    const tenkan = (midpoint(highs,n-9,9) + midpoint(lows,n-9,9)) / 2;
+
+    const kijun  = (midpoint(highs,n-26,26) + midpoint(lows,n-26,26)) / 2;
+
+    const senkouA = (tenkan + kijun) / 2;
+
+    const senkouB = (midpoint(highs,n-52,52) + midpoint(lows,n-52,52)) / 2;
+
+    const chikou  = closes[n-1];
+    const chikouRef = closes[n-26] || closes[0];
+    const price = closes[n-1];
+    return { tenkan, kijun, senkouA, senkouB, chikou, chikouRef, price };
   }
 
   const TF = {
@@ -2678,71 +2424,49 @@ self.onmessage=function(e){
     };
   }
 
-  // ── Shared Yahoo parser + race fetcher ───────────────────────────────────────
-  function _parseYahooChart(d) {
-    if(!d?.chart?.result?.[0]) throw new Error('No data');
-    const r = d.chart.result[0], q = r.indicators.quote[0];
-    const valid = r.timestamp.map((_,i)=>i).filter(i=>q.close[i]!=null&&q.open[i]!=null&&q.high[i]!=null);
-    if(valid.length < 10) throw new Error('Too few candles');
-    return {
-      closes:  valid.map(i=>+q.close[i]),
-      opens:   valid.map(i=>+q.open[i]),
-      highs:   valid.map(i=>+q.high[i]),
-      lows:    valid.map(i=>+q.low[i]),
-      volumes: valid.map(i=>+(q.volume[i]||0)),
-    };
-  }
-
-  // Race query1 + query2 simultaneously — take whichever responds first
-  async function _yahooRace(ticker, interval, range) {
-    const urls = [
-      `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=${interval}&range=${range}`,
-      `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=${interval}&range=${range}`,
-    ];
-    // Fire both at once, return first success
-    return Promise.any(urls.map(url =>
-      smartFetch(url).then(d => { const o = _parseYahooChart(d); if(!o) throw new Error('empty'); return { ohlcv:o, url }; })
-    ));
-  }
-
-  // 5-minute candle cache for stocks/commodities (keyed by ticker+interval+range)
-  const _yahooCache = {};
-  function _yahooCached(ticker, interval, range) {
-    const key = `${ticker}_${interval}_${range}`;
-    const hit = _yahooCache[key];
-    if(hit && Date.now() - hit.ts < 5*60*1000) return hit.data;
-    return null;
-  }
-  function _yahooSetCache(ticker, interval, range, data) {
-    _yahooCache[`${ticker}_${interval}_${range}`] = { data, ts: Date.now() };
-  }
-
   // ── Custom stocks — generic Yahoo Finance fetcher ────────────────────────────
   async function tryCustomStock(sym, cs) {
-    const interval = ['15m','30m'].includes(currentTF) ? '1h' : (TF.yahoo[currentTF]||'1d');
-    const range    = ['15m','30m'].includes(currentTF) ? '60d' : (TF.yahooRange[currentTF]||'2y');
-    const ticker   = cs.yahoo || sym;
+    const yInterval = ['15m','30m'].includes(currentTF) ? '1h' : (TF.yahoo[currentTF]||'1d');
+    const yRange    = ['15m','30m'].includes(currentTF) ? '60d' : (TF.yahooRange[currentTF]||'2y');
+    const ticker    = cs.yahoo || sym;
 
-    const cached = _yahooCached(ticker, interval, range);
-    if(cached) return { ...cached, source:`Yahoo (cached · ${interval})` };
+    function parseYahoo(d) {
+      if(!d?.chart?.result?.[0]) throw new Error('No data');
+      const r = d.chart.result[0], q = r.indicators.quote[0];
+      const valid = r.timestamp.map((_,i)=>i).filter(i=>q.close[i]!=null&&q.open[i]!=null&&q.high[i]!=null);
+      if(valid.length < 10) throw new Error('Too few candles');
+      return {
+        closes:  valid.map(i=>+q.close[i]),
+        opens:   valid.map(i=>+q.open[i]),
+        highs:   valid.map(i=>+q.high[i]),
+        lows:    valid.map(i=>+q.low[i]),
+        volumes: valid.map(i=>+(q.volume[i]||0)),
+      };
+    }
 
-    const { ohlcv } = await _yahooRace(ticker, interval, range)
-      .catch(() => { throw new Error(`Yahoo Finance unavailable for ${ticker}`); });
+    let ohlcv = null, sourceLabel = '';
+    for(const host of ['query1','query2']) {
+      if(ohlcv) break;
+      try {
+        const url = `https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=${yInterval}&range=${yRange}`;
+        const d = await smartFetch(url);
+        ohlcv = parseYahoo(d);
+        sourceLabel = `Yahoo Finance (${ticker} · ${yInterval})`;
+      } catch(e) {}
+    }
+    if(!ohlcv) throw new Error(`Yahoo Finance unavailable for ${ticker}`);
 
     const { closes, opens, highs, lows, volumes } = ohlcv;
     const price = closes[closes.length-1];
-    const result = {
+    return {
       price,
       high24: Math.max(...highs.slice(-2)),
       low24:  Math.min(...lows.slice(-2)),
       open24: opens[opens.length-1],
       vol24:  volumes[volumes.length-1]||0,
       opens, closes, highs, lows, volumes,
-      source: `Yahoo Finance (${ticker} · ${interval})`,
-      pair:   cs.display||ticker
+      source: sourceLabel, pair: cs.display||ticker
     };
-    _yahooSetCache(ticker, interval, range, result);
-    return result;
   }
 
   // ── Commodities: Silver & Oil via Yahoo Finance futures ──────────────────────
@@ -2750,49 +2474,75 @@ self.onmessage=function(e){
     const cp = COMMODITY_PAIRS[sym];
     if(!cp) throw new Error('Not a commodity pair');
 
-    const interval = ['15m','30m'].includes(currentTF) ? '1h' : (TF.yahoo[currentTF]||'1d');
-    const range    = ['15m','30m'].includes(currentTF) ? '60d' : (TF.yahooRange[currentTF]||'2y');
+    const yInterval = ['15m','30m'].includes(currentTF) ? '1h' : (TF.yahoo[currentTF]||'1d');
+    const yRange    = ['15m','30m'].includes(currentTF) ? '60d' : (TF.yahooRange[currentTF]||'2y');
 
-    const cached = _yahooCached(cp.yahoo, interval, range);
-    if(cached) return { ...cached, pair:cp.display, source:`Yahoo (cached · ${interval})` };
+    function parseYahoo(d) {
+      if(!d?.chart?.result?.[0]) throw new Error('No data');
+      const r = d.chart.result[0], q = r.indicators.quote[0];
+      const valid = r.timestamp.map((_,i)=>i).filter(i=>q.close[i]!=null&&q.open[i]!=null&&q.high[i]!=null);
+      if(valid.length < 10) throw new Error('Too few candles');
+      return {
+        closes:  valid.map(i=>+q.close[i]),
+        opens:   valid.map(i=>+q.open[i]),
+        highs:   valid.map(i=>+q.high[i]),
+        lows:    valid.map(i=>+q.low[i]),
+        volumes: valid.map(i=>+(q.volume[i]||0)),
+      };
+    }
 
-    // Race Yahoo query1 + query2 + Stooq simultaneously
-    const stooqSym = sym==='XAGUSD' ? 'xag.f' : 'cl.f';
-    const stooqPromise = fetch(`https://stooq.com/q/d/l/?s=${stooqSym}&i=d`, { signal: AbortSignal.timeout(6000) })
-      .then(async r => {
-        const text = await r.text();
-        if(!text.includes('Date')) throw new Error('bad response');
+    let ohlcv = null, sourceLabel = '';
+
+    // Source 1: Yahoo query1
+    try {
+      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${cp.yahoo}?interval=${yInterval}&range=${yRange}`;
+      const d = await smartFetch(url);
+      ohlcv = parseYahoo(d);
+      sourceLabel = `Yahoo Finance (${cp.yahoo} · ${yInterval})`;
+    } catch(e) {}
+
+    // Source 2: Yahoo query2
+    if(!ohlcv) try {
+      const url = `https://query2.finance.yahoo.com/v8/finance/chart/${cp.yahoo}?interval=${yInterval}&range=${yRange}`;
+      const d = await smartFetch(url);
+      ohlcv = parseYahoo(d);
+      sourceLabel = `Yahoo Finance q2 (${cp.yahoo} · ${yInterval})`;
+    } catch(e) {}
+
+    // Source 3: Stooq (Silver=XAG.F, Oil=CL.F)
+    if(!ohlcv) try {
+      const stooqSym = sym==='XAGUSD' ? 'xag.f' : 'cl.f';
+      const res = await fetch(`https://stooq.com/q/d/l/?s=${stooqSym}&i=d`, { signal: AbortSignal.timeout(8000) });
+      const text = await res.text();
+      if(text.includes('Date') && text.includes(',')) {
         const lines = text.trim().split('\n').slice(1).filter(l=>l.trim());
-        if(lines.length < 10) throw new Error('too few rows');
-        const rows = lines.map(l=>l.split(','));
-        return { ohlcv:{
-          closes:  rows.map(r=>+r[4]),
-          opens:   rows.map(r=>+r[1]),
-          highs:   rows.map(r=>+r[2]),
-          lows:    rows.map(r=>+r[3]),
-          volumes: rows.map(r=>+(r[5]||0)),
-        }, url:'stooq' };
-      });
+        if(lines.length >= 10) {
+          const rows = lines.map(l=>l.split(','));
+          ohlcv = {
+            closes:  rows.map(r=>+r[4]),
+            opens:   rows.map(r=>+r[1]),
+            highs:   rows.map(r=>+r[2]),
+            lows:    rows.map(r=>+r[3]),
+            volumes: rows.map(r=>+(r[5]||0)),
+          };
+          sourceLabel = `Stooq (${stooqSym} · Daily)`;
+        }
+      }
+    } catch(e) {}
 
-    const { ohlcv, url } = await Promise.any([
-      _yahooRace(cp.yahoo, interval, range),
-      stooqPromise,
-    ]).catch(() => { throw new Error(`${cp.display}: all sources failed`); });
+    if(!ohlcv) throw new Error(`${cp.display}: all sources failed`);
 
     const { closes, opens, highs, lows, volumes } = ohlcv;
     const price = closes[closes.length-1];
-    const sourceName = url==='stooq' ? `Stooq (${stooqSym} · Daily)` : `Yahoo Finance (${cp.yahoo} · ${interval})`;
-    const result = {
+    return {
       price,
       high24: Math.max(...highs.slice(-2)),
       low24:  Math.min(...lows.slice(-2)),
       open24: opens[opens.length-1],
       vol24:  volumes[volumes.length-1]||0,
       opens, closes, highs, lows, volumes,
-      source: sourceName, pair: cp.display
+      source: sourceLabel, pair: cp.display
     };
-    _yahooSetCache(cp.yahoo, interval, range, result);
-    return result;
   }
 
   // ── SPECIAL_PAIRS: used for fmtP detection (forex + ANTAM + commodities) ────
@@ -2813,48 +2563,90 @@ self.onmessage=function(e){
 
   // For ANTAM (IDX stock, no crypto exchange) — use Yahoo Finance via proxy
   async function tryANTAM() {
-    const interval = ['15m','30m'].includes(currentTF) ? '1h' : (TF.yahoo[currentTF]||'1d');
-    const range    = ['15m','30m'].includes(currentTF) ? '60d' : (TF.yahooRange[currentTF]||'2y');
-    const ticker   = 'ANTM.JK';
+    // Map currentTF to Yahoo/Stooq compatible intervals
+    const yInterval = ['15m','30m'].includes(currentTF) ? '1h' : (TF.yahoo[currentTF]||'1d');
+    const yRange    = ['15m','30m'].includes(currentTF) ? '60d' : (TF.yahooRange[currentTF]||'2y');
 
-    const cached = _yahooCached(ticker, interval, range);
-    if(cached) return { ...cached, pair:'ANTAM/IDR', source:`Yahoo (cached · ${interval})` };
+    // Helper: parse Yahoo chart response into OHLCV
+    function parseYahoo(d) {
+      if(!d?.chart?.result?.[0]) throw new Error('No data');
+      const r = d.chart.result[0], q = r.indicators.quote[0];
+      const valid = r.timestamp.map((_,i)=>i).filter(i=>q.close[i]!=null&&q.open[i]!=null&&q.high[i]!=null);
+      if(valid.length < 10) throw new Error('Too few candles');
+      return {
+        closes:  valid.map(i=>+q.close[i]),
+        opens:   valid.map(i=>+q.open[i]),
+        highs:   valid.map(i=>+q.high[i]),
+        lows:    valid.map(i=>+q.low[i]),
+        volumes: valid.map(i=>+(q.volume[i]||0)),
+      };
+    }
 
-    const stooqPromise = fetch('https://stooq.com/q/d/l/?s=antm.jk&i=d', { signal: AbortSignal.timeout(6000) })
-      .then(async r => {
-        const text = await r.text();
-        if(!text.includes('Date')) throw new Error('bad');
-        const lines = text.trim().split('\n').slice(1).filter(l=>l.trim());
-        if(lines.length < 10) throw new Error('too few');
-        const rows = lines.map(l=>l.split(','));
-        return { ohlcv:{
-          closes:  rows.map(r=>+r[4]),
-          opens:   rows.map(r=>+r[1]),
-          highs:   rows.map(r=>+r[2]),
-          lows:    rows.map(r=>+r[3]),
-          volumes: rows.map(r=>+(r[5]||0)),
-        }, url:'stooq' };
-      });
+    // Helper: parse Stooq CSV (columns: Date,Open,High,Low,Close,Volume)
+    function parseStooq(text) {
+      const lines = text.trim().split('\n').slice(1).filter(l=>l.trim());
+      if(lines.length < 10) throw new Error('Too few rows');
+      const rows = lines.map(l=>l.split(','));
+      return {
+        closes:  rows.map(r=>+r[4]),
+        opens:   rows.map(r=>+r[1]),
+        highs:   rows.map(r=>+r[2]),
+        lows:    rows.map(r=>+r[3]),
+        volumes: rows.map(r=>+(r[5]||0)),
+      };
+    }
 
-    const { ohlcv, url } = await Promise.any([
-      _yahooRace(ticker, interval, range),
-      stooqPromise,
-    ]).catch(() => { throw new Error('ANTAM: all sources failed'); });
+    let ohlcv = null, sourceLabel = '';
+
+    // Source 1: Yahoo Finance query1
+    try {
+      const url = `https://query1.finance.yahoo.com/v8/finance/chart/ANTM.JK?interval=${yInterval}&range=${yRange}`;
+      const d = await smartFetch(url);
+      ohlcv = parseYahoo(d);
+      sourceLabel = `Yahoo Finance (${yInterval})`;
+    } catch(e) {}
+
+    // Source 2: Yahoo Finance query2 (different server, sometimes unblocked)
+    if(!ohlcv) try {
+      const url = `https://query2.finance.yahoo.com/v8/finance/chart/ANTM.JK?interval=${yInterval}&range=${yRange}`;
+      const d = await smartFetch(url);
+      ohlcv = parseYahoo(d);
+      sourceLabel = `Yahoo Finance q2 (${yInterval})`;
+    } catch(e) {}
+
+    // Source 3: Stooq (free historical data, works well for IDX)
+    if(!ohlcv) try {
+      // Stooq uses daily data for IDX — best we can do for a stock
+      const url = `https://stooq.com/q/d/l/?s=antm.jk&i=d`;
+      const text = await smartFetch(url);
+      // smartFetch returns parsed JSON — stooq returns CSV so we need raw text
+      throw new Error('Stooq needs raw text — skip');
+    } catch(e) {}
+
+    // Source 4: Stooq via direct fetch (CSV, bypass smartFetch)
+    if(!ohlcv) try {
+      const url = `https://stooq.com/q/d/l/?s=antm.jk&i=d`;
+      const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
+      const text = await res.text();
+      if(text.includes('Date') && text.includes(',')) {
+        ohlcv = parseStooq(text);
+        sourceLabel = 'Stooq.com (Daily)';
+      }
+    } catch(e) {}
+
+    if(!ohlcv) throw new Error('ANTAM: all sources failed (Yahoo blocked, Stooq unavailable)');
 
     const { closes, opens, highs, lows, volumes } = ohlcv;
     const price = closes[closes.length-1];
-    const sourceName = url==='stooq' ? 'Stooq (ANTM.JK · Daily)' : `Yahoo Finance (ANTM.JK · ${interval})`;
-    const result = {
+    return {
       price,
-      high24: Math.max(...highs.slice(-2)),
-      low24:  Math.min(...lows.slice(-2)),
+      high24: Math.max(...highs.slice(-5)),
+      low24:  Math.min(...lows.slice(-5)),
       open24: opens[opens.length-1],
       vol24:  volumes[volumes.length-1]||0,
       opens, closes, highs, lows, volumes,
-      source: sourceName, pair:'ANTAM/IDR'
+      source: sourceLabel, pair:'ANTAM/IDR'
     };
-    _yahooSetCache(ticker, interval, range, result);
-    return result;
   }
 
 
@@ -3088,7 +2880,197 @@ self.onmessage=function(e){
     document.getElementById('pcHigh').textContent=fmtP(high24);
     document.getElementById('pcLow').textContent=fmtP(low24);
 
-    // All indicators rendered by _applyWave1 after worker returns
+    const rsi=calcRSI(closes),macdV=calcMACD(closes),ema20=calcEMA(closes,20),ema50=calcEMA(closes,50),bbP=calcBB(closes),stoch=calcStochRSI(closes);
+    const avgV=volumes.slice(-20).reduce((a,b)=>a+b,0)/20,volR=avgV>0?(volumes[volumes.length-1]/avgV)*100:100;
+
+    if(rsi!==null){const c=rsi<30?'var(--green)':rsi>70?'var(--red)':'var(--warn)';setInd('rsiBar','rsiVal','rsiBadge',rsi,c,rsi.toFixed(1),rsi<30?'bull':rsi>70?'bear':'neut',rsi<30?'OVERSOLD':rsi>70?'OVERBOUGHT':rsi>=50?'BULLISH':'BEARISH');}
+    if(macdV!==null){const c=macdV>=0?'var(--green)':'var(--red)';setInd('macdBar','macdVal','macdBadge',Math.min(100,50+Math.abs(macdV)/price*5000),c,(macdV>=0?'+':'')+macdV.toFixed(4),macdV>0?'bull':'bear',macdV>0?'BULLISH':'BEARISH');}
+    if(ema20!==null){const a=price>ema20;setInd('ema20Bar','ema20Val','ema20Badge',75,a?'var(--green)':'var(--red)',fmtP(ema20),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
+    if(ema50!==null){const a=price>ema50;setInd('ema50Bar','ema50Val','ema50Badge',75,a?'var(--green)':'var(--red)',fmtP(ema50),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
+    {const vc=volR>120?'var(--green)':volR<80?'var(--red)':'var(--warn)';setInd('volBar','volVal','volBadge',Math.min(100,volR/2),vc,volR.toFixed(0)+'%',volR>120?'bull':volR<80?'bear':'neut',volR>150?'VERY HIGH':volR>120?'HIGH':volR<80?'LOW':'AVERAGE');}
+    if(bbP!==null){const c=bbP>0.8?'var(--red)':bbP<0.2?'var(--green)':'var(--warn)';setInd('bbBar','bbVal','bbBadge',bbP*100,c,(bbP*100).toFixed(1)+'%',bbP>0.8?'bear':bbP<0.2?'bull':'neut',bbP>0.8?'UPPER BB':bbP<0.2?'LOWER BB':'MID BB');}
+    if(stoch!==null){const c=stoch>80?'var(--red)':stoch<20?'var(--green)':'var(--warn)';setInd('stochBar','stochVal','stochBadge',stoch,c,stoch.toFixed(1),stoch>80?'bear':stoch<20?'bull':'neut',stoch>80?'OVERBOUGHT':stoch<20?'OVERSOLD':'NEUTRAL');}
+
+    const willR = calcWilliamsR(highs, lows, closes);
+    if(willR!==null){
+      const c=willR>-20?'var(--red)':willR<-80?'var(--green)':'var(--warn)';
+      const pct=((willR+100)/100)*100;
+      setInd('willBar','willVal','willBadge',pct,c,willR.toFixed(1),
+        willR>-20?'bear':willR<-80?'bull':'neut',
+        willR>-20?'OVERBOUGHT':willR<-80?'OVERSOLD':'NEUTRAL');
+    }
+
+    const cci = calcCCI(highs, lows, closes);
+    if(cci!==null){
+      const c=cci>100?'var(--red)':cci<-100?'var(--green)':'var(--warn)';
+      const barPct=Math.min(100,Math.max(0,50+cci/4));
+      setInd('cciBar','cciVal','cciBadge',barPct,c,cci.toFixed(1),
+        cci>100?'bear':cci<-100?'bull':'neut',
+        cci>200?'EXTREME OB':cci>100?'OVERBOUGHT':cci<-200?'EXTREME OS':cci<-100?'OVERSOLD':'NEUTRAL');
+    }
+
+    const mfi = calcMFI(highs, lows, closes, volumes);
+    if(mfi!==null){
+      const c=mfi>80?'var(--red)':mfi<20?'var(--green)':'var(--warn)';
+      setInd('mfiBar','mfiVal','mfiBadge',mfi,c,mfi.toFixed(1),
+        mfi>80?'bear':mfi<20?'bull':'neut',
+        mfi>80?'OVERBOUGHT':mfi<20?'OVERSOLD':mfi>=50?'BULLISH FLOW':'BEARISH FLOW');
+    }
+
+    const roc = calcROC(closes);
+    if(roc!==null){
+      const c=roc>0?'var(--green)':'var(--red)';
+      const barPct=Math.min(100,Math.max(0,50+roc*2));
+      setInd('rocBar','rocVal','rocBadge',barPct,c,(roc>=0?'+':'')+roc.toFixed(2)+'%',
+        roc>0?'bull':'bear',
+        roc>5?'STRONG UP':roc>0?'RISING':roc>-5?'FALLING':'STRONG DOWN');
+    }
+
+    const ult = calcUltimateOscillator(highs, lows, closes);
+    if(ult!==null){
+      const c=ult>70?'var(--red)':ult<30?'var(--green)':'var(--warn)';
+      setInd('ultBar','ultVal','ultBadge',ult,c,ult.toFixed(1),
+        ult>70?'bear':ult<30?'bull':'neut',
+        ult>70?'OVERBOUGHT':ult<30?'OVERSOLD':ult>=50?'BULLISH':'BEARISH');
+    }
+
+    const ichi = calcIchimoku(highs, lows, closes);
+    if(ichi!==null){
+      const{tenkan,kijun,senkouA,senkouB,chikou,chikouRef,price:ip}=ichi;
+      const cloudTop=Math.max(senkouA,senkouB), cloudBot=Math.min(senkouA,senkouB);
+      const aboveCloud=ip>cloudTop, belowCloud=ip<cloudBot, inCloud=!aboveCloud&&!belowCloud;
+      const bullCross=tenkan>kijun, cloudGreen=senkouA>senkouB, chikouBull=chikou>chikouRef;
+
+      const ichiScore=[aboveCloud,bullCross,cloudGreen,chikouBull].filter(Boolean).length;
+      const ichiColor=ichiScore>=3?'var(--green)':ichiScore===2?'var(--warn)':ichiScore===1?'var(--warn)':'var(--red)';
+      const ichiLabel=ichiScore>=3?'BULLISH':ichiScore===2?'MIXED':ichiScore===1?'WEAK':'BEARISH';
+      setInd('ichiBar','ichiVal','ichiBadge', ichiScore*25, ichiColor,
+        aboveCloud?'ABOVE ☁':belowCloud?'BELOW ☁':'IN ☁',
+        ichiScore>=3?'bull':ichiScore<=1?'bear':'neut', ichiLabel);
+
+      const fp=n=>n>=1?'$'+n.toFixed(2):'$'+n.toFixed(6);
+      document.getElementById('ichi-tenkan').textContent=fp(tenkan);
+      document.getElementById('ichi-tenkan').style.color=tenkan>kijun?'var(--green)':'var(--red)';
+      document.getElementById('ichi-tenkan-sig').textContent=tenkan>kijun?'↑ Above Kijun':'↓ Below Kijun';
+      document.getElementById('ichi-tenkan-sig').style.color=tenkan>kijun?'var(--green)':'var(--red)';
+
+      document.getElementById('ichi-kijun').textContent=fp(kijun);
+      document.getElementById('ichi-kijun').style.color=ip>kijun?'var(--green)':'var(--red)';
+      document.getElementById('ichi-kijun-sig').textContent=ip>kijun?'Price above':'Price below';
+      document.getElementById('ichi-kijun-sig').style.color=ip>kijun?'var(--green)':'var(--red)';
+
+      document.getElementById('ichi-sa').textContent=fp(senkouA);
+      document.getElementById('ichi-sa').style.color=senkouA>senkouB?'var(--green)':'var(--red)';
+      document.getElementById('ichi-sa-sig').textContent=senkouA>senkouB?'Bullish cloud':'Bearish cloud';
+      document.getElementById('ichi-sa-sig').style.color=senkouA>senkouB?'var(--green)':'var(--red)';
+
+      document.getElementById('ichi-sb').textContent=fp(senkouB);
+      document.getElementById('ichi-sb').style.color=cloudGreen?'var(--muted)':'var(--muted)';
+      document.getElementById('ichi-sb-sig').textContent='Cloud bottom';
+
+      const cloudEl=document.getElementById('ichi-cloud');
+      cloudEl.textContent=aboveCloud?'ABOVE':belowCloud?'BELOW':'INSIDE';
+      cloudEl.style.color=aboveCloud?'var(--green)':belowCloud?'var(--red)':'var(--warn)';
+      document.getElementById('ichi-cloud-sig').textContent=aboveCloud?'Bullish zone':belowCloud?'Bearish zone':'Neutral zone';
+      document.getElementById('ichi-cloud-sig').style.color=aboveCloud?'var(--green)':belowCloud?'var(--red)':'var(--warn)';
+
+      let interp='';
+      if(aboveCloud&&bullCross&&cloudGreen) interp='🟢 <strong>Strong Bullish Setup</strong> — Price is above the cloud, Tenkan crossed above Kijun, and the cloud itself is green. All 3 Ichimoku conditions align for a long trade.';
+      else if(aboveCloud&&cloudGreen) interp='🟢 <strong>Bullish</strong> — Price is above the green cloud. Good long bias. Watch for a Tenkan/Kijun bullish cross to confirm entry.';
+      else if(aboveCloud&&!cloudGreen) interp='🟡 <strong>Cautiously Bullish</strong> — Price is above the cloud but the cloud is red (bearish future cloud). Proceed with caution.';
+      else if(inCloud) interp='🟡 <strong>Neutral / Consolidation</strong> — Price is inside the cloud. This is a no-trade zone in classical Ichimoku — wait for a breakout above or below.';
+      else if(belowCloud&&!cloudGreen) interp='🔴 <strong>Strong Bearish Setup</strong> — Price is below the cloud, and the cloud is red. All Ichimoku signals point down. Avoid longs.';
+      else if(belowCloud&&cloudGreen) interp='🔴 <strong>Bearish</strong> — Price is below the cloud. Even though the future cloud is green, current bias is bearish. Wait for price to reclaim the cloud.';
+      else interp='Analyzing Ichimoku signals...';
+      document.getElementById('ichi-interpretation').innerHTML=interp;
+    }
+
+    const adxData = calcADX(highs, lows, closes);
+    if(adxData!==null){
+      const{adx,diPlus,diMinus}=adxData;
+      const c=adx>40?'var(--green)':adx>25?'var(--warn)':'var(--red)';
+      const label=adx>40?'STRONG':adx>25?'TRENDING':adx>20?'WEAK':'RANGING';
+      setInd('adxBar','adxVal','adxBadge',adx,c,adx.toFixed(1),
+        adx>25?(diPlus>diMinus?'bull':'bear'):'neut',label);
+    }
+
+    const atr = calcATR(highs, lows, closes);
+    if(atr!==null){
+      const atrPct=(atr/price)*100;
+      const c=atrPct>3?'var(--red)':atrPct>1.5?'var(--warn)':'var(--green)';
+      setInd('atrBar','atrVal','atrBadge',Math.min(100,atrPct*15),c,fmtP(atr),
+        atrPct>3?'bear':'neut',atrPct>3?'HIGH VOL':atrPct>1.5?'MODERATE':'LOW VOL');
+
+      document.getElementById('tl-atr').textContent=fmtP(atr);
+      document.getElementById('tl-sl').textContent=fmtP(price-(atr*1.5))+' (−'+((atr*1.5/price)*100).toFixed(2)+'%)';
+      document.getElementById('tl-tp').textContent=fmtP(price+(atr*3))+' (+'+((atr*3/price)*100).toFixed(2)+'%)';
+      document.getElementById('tl-vol').textContent=atrPct.toFixed(2)+'% of price';
+      document.getElementById('tl-vol').style.color=c;
+    }
+
+    const obvData = calcOBV(closes, volumes);
+    if(obvData!==null){
+      const{value:obvVal,rising}=obvData;
+      const c=rising?'var(--green)':'var(--red)';
+      const label=rising?'RISING':'FALLING';
+      const absObv=Math.abs(obvVal);
+      const dispVal=absObv>=1e6?(obvVal/1e6).toFixed(2)+'M':absObv>=1e3?(obvVal/1e3).toFixed(1)+'K':obvVal.toFixed(0);
+      setInd('obvBar','obvVal','obvBadge',rising?72:28,c,dispVal,rising?'bull':'bear',label);
+    }
+
+    const st = calcSuperTrend(highs, lows, closes);
+    if(st!==null){
+      const up=st.trend==='up';
+      setInd('strendBar','strendVal','strendBadge',75,up?'var(--green)':'var(--red)',fmtP(st.value),up?'bull':'bear',up?'UPTREND ↑':'DOWNTREND ↓');
+    }
+
+    const piv = calcPivots(highs, lows, closes);
+    if(piv!==null){
+      const {pp, r1, s1} = piv;
+      const abovePP = price > pp;
+      const nearR1 = price > pp && price < r1;
+      const nearS1 = price < pp && price > s1;
+      setInd('pivPPBar','pivPPVal','pivPPBadge',75,abovePP?'var(--green)':'var(--red)',fmtP(pp),abovePP?'bull':'bear',abovePP?'ABOVE PP':'BELOW PP');
+      setInd('pivR1Bar','pivR1Val','pivR1Badge',75,nearR1?'var(--warn)':price>r1?'var(--red)':'var(--green)',fmtP(r1),'neut',price>r1?'ABOVE R1':nearR1?'NEAR R1':'BELOW R1');
+      setInd('pivS1Bar','pivS1Val','pivS1Badge',75,nearS1?'var(--warn)':price<s1?'var(--green)':'var(--red)',fmtP(s1),'neut',price<s1?'BELOW S1':nearS1?'NEAR S1':'ABOVE S1');
+    }
+
+    const div = calcDivergence(closes);
+    const divRsiColor = div.rsi==='bullish'?'var(--green)':div.rsi==='bearish'?'var(--red)':'var(--muted)';
+    const divMacdColor = div.macd==='bullish'?'var(--green)':div.macd==='bearish'?'var(--red)':'var(--muted)';
+    setInd('divRsiBar','divRsiVal','divRsiBadge',div.rsi!=='none'?80:30,divRsiColor,div.rsi.toUpperCase(),div.rsi==='bullish'?'bull':div.rsi==='bearish'?'bear':'neut',div.rsi==='bullish'?'BULL DIV':div.rsi==='bearish'?'BEAR DIV':'NONE');
+    setInd('divMacdBar','divMacdVal','divMacdBadge',div.macd!=='none'?80:30,divMacdColor,div.macd.toUpperCase(),div.macd==='bullish'?'bull':div.macd==='bearish'?'bear':'neut',div.macd==='bullish'?'BULL DIV':div.macd==='bearish'?'BEAR DIV':'NONE');
+
+    const vwap  = calcVWAP(closes, highs, lows, volumes);
+    const mvwap = calcMVWAP(closes, highs, lows, volumes, 20);
+    const fmtPct = v => (v>=0?'+':'')+v.toFixed(2)+'%';
+    if(vwap!==null){
+      const a=price>vwap, dist=((price-vwap)/vwap*100);
+      const sig=a?'🟢 Price above VWAP (Bullish)':'🔴 Price below VWAP (Bearish)';
+      setInd('vwapBar','vwapVal','vwapBadge',75,a?'var(--green)':'var(--red)',fmtP(vwap),a?'bull':'bear',a?'ABOVE':'BELOW');
+      document.getElementById('vwap-price').textContent=fmtP(vwap);
+      document.getElementById('vwap-price').style.color=a?'var(--green)':'var(--red)';
+      document.getElementById('vwap-pos').textContent=a?'Price ABOVE VWAP':'Price BELOW VWAP';
+      document.getElementById('vwap-pos').style.color=a?'var(--green)':'var(--red)';
+      document.getElementById('vwap-dist').textContent=fmtPct(dist);
+      document.getElementById('vwap-dist').style.color=a?'var(--green)':'var(--red)';
+      document.getElementById('vwap-signal').textContent=sig;
+      document.getElementById('vwap-signal').style.color=a?'var(--green)':'var(--red)';
+    }
+    if(mvwap!==null){
+      const a=price>mvwap, dist=((price-mvwap)/mvwap*100);
+      const sig=a?'🟢 Price above MVWAP (Bullish)':'🔴 Price below MVWAP (Bearish)';
+      setInd('mvwapBar','mvwapVal','mvwapBadge',75,a?'var(--green)':'var(--red)',fmtP(mvwap),a?'bull':'bear',a?'ABOVE':'BELOW');
+      document.getElementById('mvwap-price').textContent=fmtP(mvwap);
+      document.getElementById('mvwap-price').style.color=a?'var(--green)':'var(--red)';
+      document.getElementById('mvwap-pos').textContent=a?'Price ABOVE MVWAP':'Price BELOW MVWAP';
+      document.getElementById('mvwap-pos').style.color=a?'var(--green)':'var(--red)';
+      document.getElementById('mvwap-dist').textContent=fmtPct(dist);
+      document.getElementById('mvwap-dist').style.color=a?'var(--green)':'var(--red)';
+      document.getElementById('mvwap-signal').textContent=sig;
+      document.getElementById('mvwap-signal').style.color=a?'var(--green)':'var(--red)';
+    }
+
     stepProgress('indicators','done');
     activeProgress('mtf');
 
@@ -3116,15 +3098,6 @@ self.onmessage=function(e){
           if(res.score!==null){ scEl.textContent=`${res.score}/100`; scEl.style.color=res.score>=70?'var(--green)':res.score>=45?'var(--warn)':'var(--red)'; }
           else { scEl.textContent='N/A'; scEl.style.color='var(--muted)'; }
         }
-        // Update indicator panel MTF bars
-        const barId = id.replace('m','m').replace('h','h'); // e.g. '15m','1h','4h','1d','1w','1M'
-        const barMap={'15m':'mtf15Bar','30m':'mtf30mBar','1h':'mtf1hBar','4h':'mtf4hBar','1d':'mtf1dBar','1w':'mtf1wBar','1M':'mtf1MBar'};
-        const valMap={'15m':'mtf15Val','30m':'mtf30mVal','1h':'mtf1hVal','4h':'mtf4hVal','1d':'mtf1dVal','1w':'mtf1wVal','1M':'mtf1MVal'};
-        const badgeMap={'15m':'mtf15Badge','30m':'mtf30mBadge','1h':'mtf1hBadge','4h':'mtf4hBadge','1d':'mtf1dBadge','1w':'mtf1wBadge','1M':'mtf1MBadge'};
-        if(barMap[id]){
-          const sc=res.score!==null?res.score:50;
-          setInd(barMap[id],valMap[id],badgeMap[id],sc,res.color,res.score!==null?sc+'/100':'N/A',res.color==='var(--green)'?'bull':res.color==='var(--red)'?'bear':'neut',res.sig);
-        }
       });
 
       const validScores = mtfResults.filter(r=>r.score!==null).map(r=>r.score);
@@ -3151,11 +3124,20 @@ self.onmessage=function(e){
       stepProgress('mtf','done');
     })();
 
-    // EMAs already computed above via _snapIsBUY/_snapIsSELL/_snapBelowCount/_snapAboveCount
-    const ema8=calcEMA(closes,8),ema13=calcEMA(closes,13),ema21=calcEMA(closes,21),ema55=calcEMA(closes,55),ema200=calcEMA(closes,200);
-    if(ema200===null){document.getElementById('ema200indVal').textContent='Need 200+ candles';document.getElementById('ema200indBadge').textContent='N/A';}
+    const ema8  = calcEMA(closes, 8);
+    const ema13 = calcEMA(closes, 13);
+    const ema21 = calcEMA(closes, 21);
+    const ema55 = calcEMA(closes, 55);
+    const ema200= calcEMA(closes, 200);
 
-    const e8=ema8||0,e13=ema13||0,e21=ema21||0,e55=ema55||0;
+    if(ema8!==null){const a=price>ema8;setInd('ema9Bar','ema9Val','ema9Badge',a?75:75,a?'var(--green)':'var(--red)',fmtP(ema8),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
+    if(ema13!==null){const a=price>ema13;setInd('ema13Bar','ema13Val','ema13Badge',a?75:75,a?'var(--green)':'var(--red)',fmtP(ema13),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
+    if(ema21!==null){const a=price>ema21;setInd('ema21Bar','ema21Val','ema21Badge',a?75:75,a?'var(--green)':'var(--red)',fmtP(ema21),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
+    if(ema55!==null){const a=price>ema55;setInd('ema200Bar','ema200Val','ema200Badge',75,a?'var(--green)':'var(--red)',fmtP(ema55),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
+    if(ema200!==null){const a=price>ema200;setInd('ema200indBar','ema200indVal','ema200indBadge',a?72:28,a?'var(--green)':'var(--red)',fmtP(ema200),a?'bull':'bear',a?'UPTREND ↑':'DOWNTREND ↓');}
+    else{document.getElementById('ema200indVal').textContent='Need 200+ candles';document.getElementById('ema200indBadge').textContent='N/A';}
+
+    const e8=ema8||0, e13=ema13||0, e21=ema21||0, e55=ema55||0;
 
     const e55above8  = e55 > e8;
     const e55above13 = e55 > e13;
@@ -3169,10 +3151,10 @@ self.onmessage=function(e){
     const partialExitBuy  = !isBUY && !isSELL && e55BelowCount >= 1 && e55BelowCount <= 2 && e55BelowCount > e55AboveCount;
     const partialExitSell = !isBUY && !isSELL && e55AboveCount >= 1 && e55AboveCount <= 2 && e55AboveCount > e55BelowCount;
 
-    const macdBull  = _macdV !== null && _macdV > 0;
-    const obvBull   = calcOBV(closes,volumes)?.rising === true;
-    const adxStrong = (calcADX(highs,lows,closes)?.adx||0) > 25;
-    const rsiOk     = _rsi !== null && _rsi > 40 && _rsi < 70;
+    const macdBull  = macdV !== null && macdV > 0;
+    const obvBull   = obvData !== null && obvData.rising;
+    const adxStrong = adxData !== null && adxData.adx > 25;
+    const rsiOk     = rsi !== null && rsi > 40 && rsi < 70;
 
     const tlSignalEl = document.getElementById('tl-signal');
     const tlDetailEl = document.getElementById('tl-signal-detail');
@@ -3307,7 +3289,7 @@ self.onmessage=function(e){
   // ── WAVE 1: indicators + score + prediction + patterns ───────────────────
   function _applyWave1(w1, pair, source, sym, price, opens, closes, highs, lows, volumes, isBUY, isSELL, tf, rm, _rsi, _macdV) {
     const { ind, score, prediction, patterns, elapsed1 } = w1;
-    const { rsi, macdV, ema8, ema13, ema21, ema20, ema50, ema55, ema200, bbP, stoch, willR, atr, adxData, obvData, ichi, st, piv, div, vwap, mvwap, cci, mfi, roc, ult, volR, psar, cmf, kelt } = ind;
+    const { rsi, macdV, ema8, ema13, ema21, ema20, ema50, ema55, ema200, bbP, stoch, willR, atr, adxData, obvData, ichi, st, piv, div, vwap, mvwap, cci, mfi, roc, ult, volR } = ind;
 
     // ── Indicator bars ──────────────────────────────────────────────────────
     if(rsi!==null){const c=rsi<30?'var(--green)':rsi>70?'var(--red)':'var(--warn)';setInd('rsiBar','rsiVal','rsiBadge',rsi,c,rsi.toFixed(1),rsi<30?'bull':rsi>70?'bear':'neut',rsi<30?'OVERSOLD':rsi>70?'OVERBOUGHT':rsi>=50?'BULLISH':'BEARISH');}
@@ -3322,70 +3304,32 @@ self.onmessage=function(e){
     if(mfi!==null){const c=mfi>80?'var(--red)':mfi<20?'var(--green)':'var(--warn)';setInd('mfiBar','mfiVal','mfiBadge',mfi,c,mfi.toFixed(1),mfi>80?'bear':mfi<20?'bull':'neut',mfi>80?'OVERBOUGHT':mfi<20?'OVERSOLD':mfi>=50?'BULLISH FLOW':'BEARISH FLOW');}
     if(roc!==null){const c=roc>0?'var(--green)':'var(--red)';const bp=Math.min(100,Math.max(0,50+roc*2));setInd('rocBar','rocVal','rocBadge',bp,c,(roc>=0?'+':'')+roc.toFixed(2)+'%',roc>0?'bull':'bear',roc>5?'STRONG UP':roc>0?'RISING':roc>-5?'FALLING':'STRONG DOWN');}
     if(ult!==null){const c=ult>70?'var(--red)':ult<30?'var(--green)':'var(--warn)';setInd('ultBar','ultVal','ultBadge',ult,c,ult.toFixed(1),ult>70?'bear':ult<30?'bull':'neut',ult>70?'OVERBOUGHT':ult<30?'OVERSOLD':ult>=50?'BULLISH':'BEARISH');}
-    if(psar){const c=psar.bull?'var(--green)':'var(--red)';setInd('psarBar','psarVal','psarBadge',psar.bull?75:25,c,fmtP(psar.value),psar.bull?'bull':'bear',psar.bull?'PRICE ABOVE SAR':'PRICE BELOW SAR');}
-    if(cmf!==null){const c=cmf>0.05?'var(--green)':cmf<-0.05?'var(--red)':'var(--warn)';const bp=Math.min(100,Math.max(0,50+cmf*200));setInd('cmfBar','cmfVal','cmfBadge',bp,c,cmf.toFixed(3),cmf>0.05?'bull':cmf<-0.05?'bear':'neut',cmf>0.1?'STRONG INFLOW':cmf>0.05?'INFLOW':cmf>-0.05?'NEUTRAL':cmf>-0.1?'OUTFLOW':'STRONG OUTFLOW');}
-    if(kelt){const c=kelt.pct<20?'var(--green)':kelt.pct>80?'var(--red)':'var(--warn)';setInd('keltBar','keltVal','keltBadge',kelt.pct,c,kelt.pct.toFixed(1)+'%',kelt.pct<30?'bull':kelt.pct>70?'bear':'neut',kelt.pct<20?'NEAR LOWER BAND':kelt.pct>80?'NEAR UPPER BAND':kelt.pct<50?'BELOW MID':'ABOVE MID');}
-
-    // ── Remaining indicators (EMA, ATR, OBV, ADX, ST, Pivots, Div, VWAP) ────
     if(ema8!==null){const a=price>ema8;setInd('ema9Bar','ema9Val','ema9Badge',75,a?'var(--green)':'var(--red)',fmtP(ema8),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
     if(ema13!==null){const a=price>ema13;setInd('ema13Bar','ema13Val','ema13Badge',75,a?'var(--green)':'var(--red)',fmtP(ema13),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
     if(ema21!==null){const a=price>ema21;setInd('ema21Bar','ema21Val','ema21Badge',75,a?'var(--green)':'var(--red)',fmtP(ema21),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
     if(ema55!==null){const a=price>ema55;setInd('ema200Bar','ema200Val','ema200Badge',75,a?'var(--green)':'var(--red)',fmtP(ema55),a?'bull':'bear',a?'EMA BELOW ↓':'EMA ABOVE ↑');}
     if(ema200!==null){const a=price>ema200;setInd('ema200indBar','ema200indVal','ema200indBadge',75,a?'var(--green)':'var(--red)',fmtP(ema200),a?'bull':'bear',a?'ABOVE EMA200':'BELOW EMA200');}
-    else{const ev=document.getElementById('ema200indVal');if(ev)ev.textContent='Need 200+ candles';}
-    if(atr!==null){const ap=(atr/price*100);const c=ap>3?'var(--red)':ap>1.5?'var(--warn)':'var(--green)';setInd('atrBar','atrVal','atrBadge',Math.min(100,ap*10),c,fmtP(atr),ap>3?'bear':'neut',ap>5?'HIGH VOLATILITY':ap>2?'MODERATE ATR':'LOW VOLATILITY');
-      const ta=document.getElementById('tl-atr');if(ta)ta.textContent=fmtP(atr);
-      const tsl=document.getElementById('tl-sl');if(tsl)tsl.textContent=fmtP(price-(atr*1.5))+' (−'+((atr*1.5/price)*100).toFixed(2)+'%)';
-      const ttp=document.getElementById('tl-tp');if(ttp)ttp.textContent=fmtP(price+(atr*3))+' (+'+((atr*3/price)*100).toFixed(2)+'%)';
-      const tv=document.getElementById('tl-vol');if(tv){tv.textContent=ap.toFixed(2)+'% of price';tv.style.color=c;}
-    }
-    if(obvData!==null){const{value:ov,rising}=obvData;const c=rising?'var(--green)':'var(--red)';const av=Math.abs(ov);const dv=av>=1e6?(ov/1e6).toFixed(2)+'M':av>=1e3?(ov/1e3).toFixed(1)+'K':ov.toFixed(0);setInd('obvBar','obvVal','obvBadge',rising?72:28,c,dv,rising?'bull':'bear',rising?'ACCUMULATING':'DISTRIBUTING');}
+    if(atr!==null){const ap=(atr/price*100);setInd('atrBar','atrVal','atrBadge',Math.min(100,ap*10),'var(--warn)',fmtP(atr),ap>3?'bear':'neut',ap>5?'HIGH VOLATILITY':ap>2?'MODERATE ATR':'LOW VOLATILITY');}
+    if(obvData!==null){const c=obvData.rising?'var(--green)':'var(--red)';setInd('obvBar','obvVal','obvBadge',obvData.rising?80:20,c,obvData.rising?'Rising':'Falling',obvData.rising?'bull':'bear',obvData.rising?'ACCUMULATING':'DISTRIBUTING');}
     if(adxData!==null){const{adx,diPlus,diMinus}=adxData;const c=adx>40?'var(--green)':adx>25?'var(--warn)':'var(--red)';setInd('adxBar','adxVal','adxBadge',Math.min(100,adx*2),c,adx.toFixed(1)+(diPlus>diMinus?' +DI':' -DI'),adx>25&&diPlus>diMinus?'bull':adx>25&&diMinus>diPlus?'bear':'neut',adx>40?'STRONG TREND':adx>25?'TRENDING':'WEAK TREND');}
     if(st!==null){const u=st.trend==='up';setInd('strendBar','strendVal','strendBadge',u?75:25,u?'var(--green)':'var(--red)',fmtP(st.value),u?'bull':'bear',u?'UPTREND ↑':'DOWNTREND ↓');}
     if(piv!==null){setInd('pivR1Bar','pivR1Val','pivR1Badge',75,'var(--red)',fmtP(piv.r1),price<piv.r1?'neut':'bear','R1 RESISTANCE');setInd('pivPPBar','pivPPVal','pivPPBadge',50,'var(--warn)',fmtP(piv.pp),price>piv.pp?'bull':'bear',price>piv.pp?'ABOVE PP':'BELOW PP');setInd('pivS1Bar','pivS1Val','pivS1Badge',25,'var(--green)',fmtP(piv.s1),price>piv.s1?'bull':'neut','S1 SUPPORT');}
-    if(div){const rd=div.rsi,md=div.macd;setInd('divRsiBar','divRsiVal','divRsiBadge',rd==='bullish'?75:rd==='bearish'?25:50,rd==='bullish'?'var(--green)':rd==='bearish'?'var(--red)':'var(--muted)',rd.toUpperCase(),rd==='bullish'?'bull':rd==='bearish'?'bear':'neut','RSI DIV: '+rd.toUpperCase());setInd('divMacdBar','divMacdVal','divMacdBadge',md==='bullish'?75:md==='bearish'?25:50,md==='bullish'?'var(--green)':md==='bearish'?'var(--red)':'var(--muted)',md.toUpperCase(),md==='bullish'?'bull':md==='bearish'?'bear':'neut','MACD DIV: '+md.toUpperCase());}
-    if(vwap!==null){const a=price>vwap,dist=((price-vwap)/vwap*100);const fmtPct=v=>(v>=0?'+':'')+v.toFixed(2)+'%';setInd('vwapBar','vwapVal','vwapBadge',75,a?'var(--green)':'var(--red)',fmtP(vwap),a?'bull':'bear',a?'ABOVE VWAP':'BELOW VWAP');
-      const ve=document.getElementById('vwap-price');if(ve){ve.textContent=fmtP(vwap);ve.style.color=a?'var(--green)':'var(--red)';}
-      const vp=document.getElementById('vwap-pos');if(vp){vp.textContent=a?'Price ABOVE VWAP':'Price BELOW VWAP';vp.style.color=a?'var(--green)':'var(--red)';}
-      const vd=document.getElementById('vwap-dist');if(vd){vd.textContent=fmtPct(dist);vd.style.color=a?'var(--green)':'var(--red)';}
-      const vs=document.getElementById('vwap-signal');if(vs){vs.textContent=a?'🟢 Price above VWAP (Bullish)':'🔴 Price below VWAP (Bearish)';vs.style.color=a?'var(--green)':'var(--red)';}
-    }
-    if(mvwap!==null){const a=price>mvwap,dist=((price-mvwap)/mvwap*100);const fmtPct=v=>(v>=0?'+':'')+v.toFixed(2)+'%';setInd('mvwapBar','mvwapVal','mvwapBadge',75,a?'var(--green)':'var(--red)',fmtP(mvwap),a?'bull':'bear',a?'ABOVE MVWAP':'BELOW MVWAP');
-      const me=document.getElementById('mvwap-price');if(me){me.textContent=fmtP(mvwap);me.style.color=a?'var(--green)':'var(--red)';}
-      const mp=document.getElementById('mvwap-pos');if(mp){mp.textContent=a?'Price ABOVE MVWAP':'Price BELOW MVWAP';mp.style.color=a?'var(--green)':'var(--red)';}
-      const md2=document.getElementById('mvwap-dist');if(md2){md2.textContent=fmtPct(dist);md2.style.color=a?'var(--green)':'var(--red)';}
-    }
+    if(vwap!==null){const a=price>vwap;setInd('vwapBar','vwapVal','vwapBadge',75,a?'var(--green)':'var(--red)',fmtP(vwap),a?'bull':'bear',a?'ABOVE VWAP':'BELOW VWAP');}
+    if(mvwap!==null){const a=price>mvwap;setInd('mvwapBar','mvwapVal','mvwapBadge',75,a?'var(--green)':'var(--red)',fmtP(mvwap),a?'bull':'bear',a?'ABOVE MVWAP':'BELOW MVWAP');}
+    if(div){const rd=div.rsi,md=div.macd;const c=rd==='bullish'||md==='bullish'?'var(--green)':rd==='bearish'||md==='bearish'?'var(--red)':'var(--warn)';setInd('divRsiBar','divRsiVal','divRsiBadge',rd==='bullish'?75:rd==='bearish'?25:50,c,rd.toUpperCase(),rd==='bullish'?'bull':rd==='bearish'?'bear':'neut','RSI DIV: '+rd.toUpperCase());setInd('divMacdBar','divMacdVal','divMacdBadge',md==='bullish'?75:md==='bearish'?25:50,c,md.toUpperCase(),md==='bullish'?'bull':md==='bearish'?'bear':'neut','MACD DIV: '+md.toUpperCase());}
 
     // ── Ichimoku ────────────────────────────────────────────────────────────
     if(ichi!==null){
       const{tenkan,kijun,senkouA,senkouB,chikou,chikouRef,price:ip}=ichi;
       const cloudTop=Math.max(senkouA,senkouB),cloudBot=Math.min(senkouA,senkouB);
-      const aboveCloud=ip>cloudTop,belowCloud=ip<cloudBot,inCloud=!aboveCloud&&!belowCloud;
-      const bullCross=tenkan>kijun,cloudGreen=senkouA>senkouB,chikouBull=chikou>chikouRef;
-      const ichiScore=[aboveCloud,bullCross,cloudGreen,chikouBull].filter(Boolean).length;
+      const aboveCloud=ip>cloudTop,belowCloud=ip<cloudBot;
+      const ichiScore=[aboveCloud,tenkan>kijun,senkouA>senkouB,chikou>chikouRef].filter(Boolean).length;
       const ichiColor=ichiScore>=3?'var(--green)':ichiScore===2?'var(--warn)':'var(--red)';
       setInd('ichiBar','ichiVal','ichiBadge',ichiScore*25,ichiColor,aboveCloud?'ABOVE ☁':belowCloud?'BELOW ☁':'IN ☁',ichiScore>=3?'bull':ichiScore<=1?'bear':'neut',ichiScore>=3?'BULLISH':ichiScore===2?'MIXED':'BEARISH');
       const fp=n=>n>=1?'$'+n.toFixed(2):'$'+n.toFixed(6);
-      // Ichimoku detail panel
-      [['ichi-tenkan',tenkan],['ichi-kijun',kijun],['ichi-sa',senkouA],['ichi-sb',senkouB]].forEach(([id,v])=>{const el=document.getElementById(id);if(el)el.textContent=fp(v);});
-      const tk=document.getElementById('ichi-tenkan');if(tk)tk.style.color=tenkan>kijun?'var(--green)':'var(--red)';
+      [['ichi-tenkan',tenkan],['ichi-kijun',kijun],['ichi-senkou-a',senkouA],['ichi-senkou-b',senkouB],['ichi-chikou',chikou]].forEach(([id,v])=>{const el=document.getElementById(id);if(el)el.textContent=fp(v);});
       const ts=document.getElementById('ichi-tenkan-sig');if(ts){ts.textContent=tenkan>kijun?'↑ Above Kijun':'↓ Below Kijun';ts.style.color=tenkan>kijun?'var(--green)':'var(--red)';}
-      const kj=document.getElementById('ichi-kijun');if(kj)kj.style.color=ip>kijun?'var(--green)':'var(--red)';
-      const kjs=document.getElementById('ichi-kijun-sig');if(kjs){kjs.textContent=ip>kijun?'Price above':'Price below';kjs.style.color=ip>kijun?'var(--green)':'var(--red)';}
-      const sa=document.getElementById('ichi-sa');if(sa)sa.style.color=senkouA>senkouB?'var(--green)':'var(--red)';
-      const sas=document.getElementById('ichi-sa-sig');if(sas){sas.textContent=senkouA>senkouB?'Bullish cloud':'Bearish cloud';sas.style.color=senkouA>senkouB?'var(--green)':'var(--red)';}
-      const sbs=document.getElementById('ichi-sb-sig');if(sbs)sbs.textContent='Cloud bottom';
-      const cloudEl=document.getElementById('ichi-cloud');if(cloudEl){cloudEl.textContent=aboveCloud?'ABOVE':belowCloud?'BELOW':'INSIDE';cloudEl.style.color=aboveCloud?'var(--green)':belowCloud?'var(--red)':'var(--warn)';}
-      const cs=document.getElementById('ichi-cloud-sig');if(cs){cs.textContent=aboveCloud?'Bullish zone':belowCloud?'Bearish zone':'Neutral zone';cs.style.color=aboveCloud?'var(--green)':belowCloud?'var(--red)':'var(--warn)';}
-      let interp='';
-      if(aboveCloud&&bullCross&&cloudGreen)interp='🟢 <strong>Strong Bullish Setup</strong> — Price above cloud, Tenkan crossed Kijun, cloud is green. All 3 Ichimoku conditions align for long.';
-      else if(aboveCloud&&cloudGreen)interp='🟢 <strong>Bullish</strong> — Price above green cloud. Watch for Tenkan/Kijun cross to confirm entry.';
-      else if(aboveCloud&&!cloudGreen)interp='🟡 <strong>Cautiously Bullish</strong> — Price above cloud but cloud is red. Proceed with caution.';
-      else if(inCloud)interp='🟡 <strong>Neutral / Consolidation</strong> — Price inside cloud. No-trade zone — wait for breakout.';
-      else if(belowCloud&&!cloudGreen)interp='🔴 <strong>Strong Bearish Setup</strong> — Price below cloud, cloud is red. Avoid longs.';
-      else if(belowCloud&&cloudGreen)interp='🔴 <strong>Bearish</strong> — Price below cloud. Wait for price to reclaim cloud.';
-      else interp='Analyzing Ichimoku signals...';
-      const ii=document.getElementById('ichi-interpretation');if(ii)ii.innerHTML=interp;
+      const cs=document.getElementById('ichi-cloud-sig');if(cs){cs.textContent=aboveCloud?'Price above cloud ☁ (Bullish)':belowCloud?'Price below cloud ☁ (Bearish)':'Price inside cloud (Neutral)';cs.style.color=aboveCloud?'var(--green)':belowCloud?'var(--red)':'var(--warn)';}
     }
 
     // ── Trade score ring ────────────────────────────────────────────────────
@@ -3454,19 +3398,7 @@ self.onmessage=function(e){
 
   // ── WAVE 2: chart + backtest + volume profile + key levels + S&R ──────────
   function _applyWave2(w2, price, opens, closes, highs, lows, volumes, sym, tf) {
-    const { chart, backtest, volumeProfile, keyLevels, advPatterns, elapsed2, totalElapsed } = w2;
-
-    // ── Advanced chart patterns (arrives in wave2) ───────────────────────────
-    if(advPatterns){
-      setPattern('pat-flag',        advPatterns.flag[0],        advPatterns.flag[1]);
-      setPattern('pat-pennant',     advPatterns.pennant[0],     advPatterns.pennant[1]);
-      setPattern('pat-wedge',       advPatterns.wedge[0],       advPatterns.wedge[1]);
-      setPattern('pat-double',      advPatterns.double[0],      advPatterns.double[1]);
-      setPattern('pat-hs',          advPatterns.hs[0],          advPatterns.hs[1]);
-      setPattern('pat-triangle',    advPatterns.triangle[0],    advPatterns.triangle[1]);
-      setPattern('pat-cup',         advPatterns.cup[0],         advPatterns.cup[1]);
-      setPattern('pat-adv-overall', advPatterns.advOverall[0],  advPatterns.advOverall[1]);
-    }
+    const { chart, backtest, volumeProfile, keyLevels, elapsed2, totalElapsed } = w2;
 
     // ── Chart ───────────────────────────────────────────────────────────────
     drawMiniChart(opens||closes,closes,highs,lows,chart.e8,chart.e21,chart.e55,chart.e200,sym,tf);
@@ -3598,17 +3530,16 @@ self.onmessage=function(e){
     let entry,sl,tp1,tp2,entryDetail,slDetail,tp1Detail,tp2Detail;
     if(isBull){const sup=piv?Math.max(piv.s1,price-atrV*0.8):price-atrV*0.5;entry=price;sl=sup-atrV*0.3;tp1=piv?piv.r1:price+atrV*2;tp2=piv?piv.r2:price+atrV*3.5;entryDetail='Market / dip to support';slDetail=`Below ${piv?'S1':'ATR floor'} · ${(((price-sl)/price)*100).toFixed(1)}% risk`;tp1Detail=`${piv?'Pivot R1':'1.5× ATR'} · +${(((tp1-price)/price)*100).toFixed(1)}%`;tp2Detail=`${piv?'Pivot R2':'2.5× ATR'} · +${(((tp2-price)/price)*100).toFixed(1)}%`;}
     else{entry=piv?piv.r1:price+atrV*0.5;sl=piv?piv.r2:price+atrV*1.5;tp1=piv?piv.s1:price-atrV*2;tp2=piv?piv.s2:price-atrV*3.5;entryDetail='Sell near resistance';slDetail=`Above ${piv?'R2':'ATR roof'} · ${(((sl-price)/price)*100).toFixed(1)}% risk`;tp1Detail=`${piv?'Pivot S1':'1.5× ATR'} · ${(((price-tp1)/price)*100).toFixed(1)}% gain`;tp2Detail=`${piv?'Pivot S2':'2.5× ATR'} · ${(((price-tp2)/price)*100).toFixed(1)}% gain`;}
-    const signals=[{label:'EMA55 Strategy',bull:isBUY,bear:isSELL,w:25},{label:'RSI',bull:rsi!==null&&rsi>50&&rsi<70,bear:rsi!==null&&(rsi<50||rsi>75),w:10},{label:'MACD',bull:macdV!==null&&macdV>0,bear:macdV!==null&&macdV<0,w:10},{label:'EMA200 Trend',bull:ema200!==null&&price>ema200,bear:ema200!==null&&price<ema200,w:10},{label:'SuperTrend',bull:st!==null&&st.trend==='up',bear:st!==null&&st.trend==='down',w:8},{label:'ADX',bull:adxData!==null&&adxData.diPlus>adxData.diMinus,bear:adxData!==null&&adxData.diMinus>adxData.diPlus,w:8},{label:'Ichimoku',bull:ichi!==null&&price>Math.max(ichi.senkouA,ichi.senkouB),bear:ichi!==null&&price<Math.min(ichi.senkouA,ichi.senkouB),w:8},{label:'Parabolic SAR',bull:psar!==null&&psar.bull,bear:psar!==null&&!psar.bull,w:7},{label:'OBV',bull:obvData!==null&&obvData.rising,bear:obvData!==null&&!obvData.rising,w:6},{label:'CMF',bull:cmf!==null&&cmf>0.05,bear:cmf!==null&&cmf<-0.05,w:6},{label:'Divergence',bull:div&&(div.rsi==='bullish'||div.macd==='bullish'),bear:div&&(div.rsi==='bearish'||div.macd==='bearish'),w:6},{label:'Keltner',bull:kelt!==null&&kelt.pct<40,bear:kelt!==null&&kelt.pct>60,w:5},{label:'Bollinger',bull:bbP!==null&&bbP<0.3,bear:bbP!==null&&bbP>0.7,w:4},{label:'Pivot Points',bull:piv!==null&&price>piv.pp,bear:piv!==null&&price<piv.pp,w:4}];
+    const signals=[{label:'EMA55 Strategy',bull:isBUY,bear:isSELL,w:25},{label:'RSI',bull:rsi!==null&&rsi>50&&rsi<70,bear:rsi!==null&&(rsi<50||rsi>75),w:10},{label:'MACD',bull:macdV!==null&&macdV>0,bear:macdV!==null&&macdV<0,w:10},{label:'EMA200 Trend',bull:ema200!==null&&price>ema200,bear:ema200!==null&&price<ema200,w:10},{label:'SuperTrend',bull:st!==null&&st.trend==='up',bear:st!==null&&st.trend==='down',w:8},{label:'ADX',bull:adxData!==null&&adxData.diPlus>adxData.diMinus,bear:adxData!==null&&adxData.diMinus>adxData.diPlus,w:8},{label:'Ichimoku',bull:ichi!==null&&price>Math.max(ichi.senkouA,ichi.senkouB),bear:ichi!==null&&price<Math.min(ichi.senkouA,ichi.senkouB),w:8},{label:'OBV',bull:obvData!==null&&obvData.rising,bear:obvData!==null&&!obvData.rising,w:6},{label:'Divergence',bull:div&&(div.rsi==='bullish'||div.macd==='bullish'),bear:div&&(div.rsi==='bearish'||div.macd==='bearish'),w:6},{label:'Pivot Points',bull:piv!==null&&price>piv.pp,bear:piv!==null&&price<piv.pp,w:4}];
     const predData={direction,dirColor,dirDetail,confidence:conf,confLabel:conf>=75?'HIGH 🔥':conf>=60?'MODERATE':'LOW ⚠️',confColor:conf>=75?'var(--green)':conf>=60?'var(--warn)':'var(--red)',rangeHigh:price+atrV*2.5,rangeLow:price-atrV*2.0,entry,sl,tp1,tp2,entryDetail,slDetail,tp1Detail,tp2Detail,isBull,signals};
     const e8s=calcEMASeries(closes,8),e21s=calcEMASeries(closes,21),e55s=calcEMASeries(closes,55),e200s=calcEMASeries(closes,200);
-    const btData=computeBacktest(closes,highs,lows,e8s,e21s,e55s);
-    const vpData=computeVolumeProfile(closes,highs,lows,volumes);
-    const advPatsData=opens?computeAdvancedPatterns(opens,highs,lows,closes):null;
+    const btData=(()=>{if(closes.length<60)return null;const e8=calcEMASeries(closes,8),e13=calcEMASeries(closes,13),e21=calcEMASeries(closes,21),e55=calcEMASeries(closes,55);let trades=[],inTrade=null,wins=0,losses=0,totalPnl=0,maxDD=0,peak=0;for(let i=60;i<closes.length-1;i++){if(!e8[i]||!e13[i]||!e21[i]||!e55[i])continue;const buyS=e55[i]<e8[i]&&e55[i]<e13[i]&&e55[i]<e21[i],sellS=e55[i]>e8[i]&&e55[i]>e13[i]&&e55[i]>e21[i];if(!inTrade&&buyS)inTrade={type:'LONG',entry:closes[i]};if(!inTrade&&sellS)inTrade={type:'SHORT',entry:closes[i]};if(inTrade){const ex=inTrade.type==='LONG'?sellS:buyS;if(ex||i===closes.length-2){const p=inTrade.type==='LONG'?(closes[i]-inTrade.entry)/inTrade.entry*100:(inTrade.entry-closes[i])/inTrade.entry*100;totalPnl+=p;if(p>0)wins++;else losses++;peak=Math.max(peak,totalPnl);maxDD=Math.max(maxDD,peak-totalPnl);trades.push({type:inTrade.type,pnlPct:p});inTrade=null;}}}const tot=wins+losses;return{total:tot,wins,losses,winRate:tot>0?(wins/tot*100).toFixed(1):0,avgPnl:tot>0?(totalPnl/tot).toFixed(2):0,totalPnl,maxDD,recentTrades:trades.slice(-10).reverse()};})();
+    const vpData=(()=>{if(closes.length<20)return null;const BINS=12,minP=Math.min(...lows),maxP=Math.max(...highs),step=(maxP-minP)/BINS,bins=Array(BINS).fill(0),labels=[];for(let b=0;b<BINS;b++)labels.push(minP+b*step+step/2);closes.forEach((c,i)=>{const bin=Math.min(BINS-1,Math.floor((c-minP)/step));if(bin>=0)bins[bin]+=(volumes[i]||0);});const maxVol=Math.max(...bins),poc=labels[bins.indexOf(maxVol)];return{bins,labels,maxVol,poc,curPrice:closes[closes.length-1]};})();
     const patsData=opens?detectCandlePatterns(opens,highs,lows,closes):null;
     const klData=(()=>{if(!closes||closes.length<20)return null;const n=closes.length,r=5,res=[],sup=[];for(let i=r;i<n-r;i++){if(highs.slice(i-r,i).every(h=>h<=highs[i])&&highs.slice(i+1,i+r+1).every(h=>h<=highs[i]))res.push(highs[i]);if(lows.slice(i-r,i).every(l=>l>=lows[i])&&lows.slice(i+1,i+r+1).every(l=>l>=lows[i]))sup.push(lows[i]);}const cl=arr=>{const m=[];arr.sort((a,b)=>a-b);for(const v of arr){if(!m.find(x=>Math.abs(x-v)/v<0.005))m.push(v);}return m;};return{resLevels:cl(res).filter(r=>r>price).sort((a,b)=>a-b).slice(0,3),supLevels:cl(sup).filter(s=>s<price).sort((a,b)=>b-a).slice(0,3)};})();
     // Apply in two waves same as worker path
     _applyWave1({ind,score:scoreData,prediction:predData,patterns:patsData,elapsed1:0},pair,source,sym,price,opens,closes,highs,lows,volumes,isBUY,isSELL,tf,rm,ind.rsi,ind.macdV);
-    _applyWave2({chart:{e8:e8s,e21:e21s,e55:e55s,e200:e200s},backtest:btData,volumeProfile:vpData,keyLevels:klData,advPatterns:advPatsData,elapsed2:0,totalElapsed:0},price,opens,closes,highs,lows,volumes,sym,tf);
+    _applyWave2({chart:{e8:e8s,e21:e21s,e55:e55s,e200:e200s},backtest:btData,volumeProfile:vpData,keyLevels:klData,elapsed2:0,totalElapsed:0},price,opens,closes,highs,lows,volumes,sym,tf);
     saveSnapshot({pair,source,price,tf,rsi:ind.rsi?.toFixed(2),macd:ind.macdV?.toFixed(4),ema55:ind.ema55?.toFixed(4),ema200:ind.ema200?.toFixed(4),adx:ind.adxData?.adx?.toFixed(1),atr:ind.atr?.toFixed(4),volR:ind.volR?.toFixed(1),score:scoreData.overall,strategy:isBUY?'BUY':isSELL?'SELL':'NEUTRAL',prediction:predData.direction,confidence:predData.confidence+'%',entry:fmtP(predData.entry),sl:fmtP(predData.sl),tp1:fmtP(predData.tp1),tp2:fmtP(predData.tp2)});
   }
 
@@ -4709,8 +4640,8 @@ self.onmessage=function(e){
     if(!watchlist.length) { grid.innerHTML='<div style="font-size:.6rem;color:var(--muted);grid-column:1/-1">No coins in watchlist.</div>'; return; }
     grid.innerHTML = watchlist.map(sym => {
       const d = wlPrices[sym];
-      const price = d?.price ? fmtP(d.price) : (d?.price === null ? '⚠️' : '…');
-      const pct = d?.pct != null ? ((d.pct>=0?'+':'')+d.pct.toFixed(2)+'%') : (d?.pct === null ? 'N/A' : '…');
+      const price = d?.price ? fmtP(d.price) : '—';
+      const pct = d?.pct != null ? ((d.pct>=0?'+':'')+d.pct.toFixed(2)+'%') : '—';
       const pctColor = d?.pct!=null?(d.pct>=0?'var(--green)':'var(--red)'):'var(--muted)';
       const score = d?.score != null ? d.score+'/100' : '…';
       const scoreColor = d?.score!=null?(d.score>=60?'var(--green)':d.score>=40?'var(--warn)':'var(--red)'):'var(--muted)';
@@ -4726,44 +4657,18 @@ self.onmessage=function(e){
 
   async function fetchWatchlistItem(sym) {
     try {
-      // ── Forex ──────────────────────────────────────────────────────────────
-      if(FOREX_PAIRS[sym]) {
-        const data = await tryForex(sym);
-        const prev = data.opens[data.opens.length-1];
-        const pct = prev ? (data.price - prev) / prev * 100 : 0;
-        const res = calcMTFScore(data.closes, data.highs, data.lows, data.volumes);
-        wlPrices[sym] = { price: data.price, pct, score: res.score };
+      const d = await smartFetch(`https://api.binance.com/api/v3/ticker/24hr?symbol=${sym}USDT`);
+      if(d.code) return;
 
-      // ── Commodity (Silver, Oil, custom futures) ────────────────────────────
-      } else if(COMMODITY_PAIRS[sym]) {
-        const data = await tryCommodity(sym);
-        const prev = data.opens[data.opens.length-1];
-        const pct = prev ? (data.price - prev) / prev * 100 : 0;
-        const res = calcMTFScore(data.closes, data.highs, data.lows, data.volumes);
-        wlPrices[sym] = { price: data.price, pct, score: res.score };
-
-      // ── Stock / ANTAM / custom Yahoo ───────────────────────────────────────
-      } else if(sym === 'ANTAM' || window._customStocks?.[sym]) {
-        const data = sym === 'ANTAM' ? await tryANTAM() : await tryCustomStock(sym, window._customStocks[sym]);
-        const prev = data.opens[data.opens.length-1];
-        const pct = prev ? (data.price - prev) / prev * 100 : 0;
-        const res = calcMTFScore(data.closes, data.highs, data.lows, data.volumes);
-        wlPrices[sym] = { price: data.price, pct, score: res.score };
-
-      // ── Normal crypto ──────────────────────────────────────────────────────
-      } else {
-        const d = await smartFetch(`https://api.binance.com/api/v3/ticker/24hr?symbol=${sym}USDT`);
-        if(d.code) throw new Error('bad ticker');
-        const kRaw = await smartFetch(`https://api.binance.com/api/v3/klines?symbol=${sym}USDT&interval=1h&limit=200`);
-        const cls = kRaw.map(k=>+k[4]);
-        const h   = kRaw.map(k=>+k[2]);
-        const l   = kRaw.map(k=>+k[3]);
-        const v   = kRaw.map(k=>+k[5]);
-        const res = calcMTFScore(cls, h, l, v);
-        wlPrices[sym] = { price: +d.lastPrice, pct: +d.priceChangePercent, score: res.score };
-      }
+      const kRaw = await smartFetch(`https://api.binance.com/api/v3/klines?symbol=${sym}USDT&interval=1h&limit=200`);
+      const cls = kRaw.map(k=>+k[4]);
+      const h = kRaw.map(k=>+k[2]);
+      const l = kRaw.map(k=>+k[3]);
+      const v = kRaw.map(k=>+k[5]);
+      const res = calcMTFScore(cls,h,l,v);
+      wlPrices[sym] = { price:+d.lastPrice, pct:+d.priceChangePercent, score:res.score };
     } catch(e) {
-      wlPrices[sym] = { price: null, pct: null, score: null };
+      wlPrices[sym] = { price:0, pct:0, score:null };
     }
     renderWatchlistUI();
   }
